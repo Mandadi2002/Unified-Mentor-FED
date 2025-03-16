@@ -1,9 +1,13 @@
 # Unified-Mentor-FED
 Tic Tac Toe (HTML, CSS, JavaScript)
 I'll provide a clean and interactive Tic Tac Toe game with:
+
 ✅ A 3x3 grid layout
+
 ✅ Clickable cells to mark 'X' and 'O'
+
 ✅ A function to check for a winner
+
 ✅ A reset button to restart the game
 
 # My-Portfolio
