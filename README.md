@@ -20,11 +20,11 @@ Social media links
 
 # Technologies Used
 
-*HTML*
+**HTML**
 
-*CSS*
+**CSS**
 
-*JavaScript*
+**JavaScript**
 
 # How to Use
 
