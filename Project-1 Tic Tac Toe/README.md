@@ -56,7 +56,7 @@ Click the "Restart" button to play again.
 
 Clone the repository or download the source files.
 
-Open index.html in any modern web browser.
+Open **index.html** in any modern web browser.
 
 Enjoy the game!
 
