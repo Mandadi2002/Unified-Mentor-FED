@@ -20,13 +20,13 @@ Social media links
 
 # Technologies Used
 
-HTML
+*HTML*
 
-CSS
+*CSS*
 
-JavaScript
+*JavaScript*
 
-#How to Use
+# How to Use
 
 Open the index.html file in a web browser.
 
