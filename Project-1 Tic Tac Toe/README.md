@@ -1,10 +1,10 @@
-Tic-Tac-Toe Game
+# Tic-Tac-Toe Game
 
-Overview
+# Overview
 
 This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns marking Xs and Os on a 3x3 grid, with the goal of getting three in a row.
 
-Features
+# Features
 
 Interactive 3x3 grid for gameplay
 
@@ -18,15 +18,15 @@ Option to restart the game
 
 Responsive design for various screen sizes
 
-Technologies Used
+# Technologies Used
 
-HTML
-CSS
-JavaScript
+**HTML**
+**CSS**
+**JavaScript**
 
-How to Play
+# How to Play
 
-Open the index.html file in a web browser.
+Open the **index.html** file in a web browser.
 
 Click on an empty cell to mark it with X or O.
 
@@ -38,15 +38,18 @@ If all cells are filled without a winner, the game ends in a draw.
 
 Click the "Restart" button to play again.
 
-Project Structure
+# Project Structure
 
 /tic-tac-toe
 │── index.html   # Main HTML file
+
 │── style.css    # Stylesheet for game design
+
 │── script.js    # JavaScript logic for gameplay
+
 └── README.md    # Documentation
 
-Installation
+# Installation
 
 Clone the repository or download the source files.
 
@@ -54,7 +57,7 @@ Open index.html in any modern web browser.
 
 Enjoy the game!
 
-Future Enhancements
+# Future Enhancements
 
 Implement AI mode for single-player gameplay
 
@@ -62,11 +65,11 @@ Add animations for a better user experience
 
 Keep track of player scores
 
-License
+# License
 
 This project is open-source and free to use. Modify and distribute as needed.
 
-Author
+# Author
 
-Developed by M. Rohit Reddy
+Developed by M.Rohit Reddy
 
