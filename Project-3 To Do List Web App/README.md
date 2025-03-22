@@ -40,9 +40,13 @@ This is a simple To-Do List application built using HTML, CSS, and JavaScript. T
 
 /todo-list-app
 │── index.html   # Main HTML file
+
 │── style.css    # Stylesheet for design
+
 │── script.js    # JavaScript logic for task management
+
 └── README.md    # Documentation
+
 
 **Installation**
 
