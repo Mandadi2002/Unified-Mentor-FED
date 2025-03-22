@@ -28,7 +28,7 @@ Social media links
 
 # How to Use
 
-Open the index.html file in a web browser.
+Open the **index.html** file in a web browser.
 
 Navigate through different sections using the menu.
 
