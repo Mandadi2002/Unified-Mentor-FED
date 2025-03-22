@@ -6,35 +6,35 @@ This is a simple To-Do List application built using HTML, CSS, and JavaScript. T
 
 **Features**
 
-*Add new tasks
+* Add new tasks
 
-*Mark tasks as completed
+* Mark tasks as completed
 
-*Delete tasks from the list
+* Delete tasks from the list
 
-*Store tasks in local storage for persistence
+* Store tasks in local storage for persistence
 
-*Responsive and user-friendly design
+* Responsive and user-friendly design
 
 **Technologies Used**
 
-*HTML
+* HTML
 
-*CSS
+* CSS
 
-*JavaScript
+* JavaScript
 
 **How to Use**
 
-*Open the index.html file in a web browser.
+* Open the index.html file in a web browser.
 
-*Enter a task in the input field and click the "Add" button to add it to the list.
+* Enter a task in the input field and click the "Add" button to add it to the list.
 
-*Click on a task to mark it as completed.
+* Click on a task to mark it as completed.
 
-*Click the delete button to remove a task.
+* Click the delete button to remove a task.
 
-*Tasks will be saved in local storage and persist even after refreshing the page.
+* Tasks will be saved in local storage and persist even after refreshing the page.
 
 **Project Structure**
 
@@ -51,8 +51,8 @@ This is a simple To-Do List application built using HTML, CSS, and JavaScript. T
 
 **Installation**
 
-*Clone the repository or download the source files.
+* Clone the repository or download the source files.
 
-*Open index.html in any modern web browser.
+* Open index.html in any modern web browser.
 
-*Start adding and managing your tasks!
+* Start adding and managing your tasks!
