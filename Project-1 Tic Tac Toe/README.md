@@ -20,25 +20,25 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. The gam
 
 # Technologies Used
 
-**HTML**
+* **HTML**
 
-**CSS**
+* **CSS**
 
-**JavaScript**
+* **JavaScript**
 
 # How to Play
 
-Open the **index.html** file in a web browser.
+* Open the **index.html** file in a web browser.
 
-Click on an empty cell to mark it with X or O.
+* Click on an empty cell to mark it with X or O.
 
-Players take turns making moves.
+* Players take turns making moves.
 
-The game announces the winner when three marks align horizontally, vertically, or diagonally.
+* The game announces the winner when three marks align horizontally, vertically, or diagonally.
 
-If all cells are filled without a winner, the game ends in a draw.
+* If all cells are filled without a winner, the game ends in a draw.
 
-Click the "Restart" button to play again.
+* Click the "Restart" button to play again.
 
 # Project Structure
 
@@ -54,19 +54,19 @@ Click the "Restart" button to play again.
 
 # Installation
 
-Clone the repository or download the source files.
+* Clone the repository or download the source files.
 
-Open **index.html** in any modern web browser.
+* Open **index.html** in any modern web browser.
 
 Enjoy the game!
 
 # Future Enhancements
 
-Implement AI mode for single-player gameplay
+* Implement AI mode for single-player gameplay
 
-Add animations for a better user experience
+* Add animations for a better user experience
 
-Keep track of player scores
+* Keep track of player scores
 
 # License
 
