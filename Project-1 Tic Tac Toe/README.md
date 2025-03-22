@@ -4,7 +4,7 @@ Overview
 
 This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. The game allows two players to take turns marking Xs and Os on a 3x3 grid, with the goal of getting three in a row.
 
-Features
+##Features
 
 Interactive 3x3 grid for gameplay
 
