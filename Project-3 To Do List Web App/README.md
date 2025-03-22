@@ -39,6 +39,7 @@ This is a simple To-Do List application built using HTML, CSS, and JavaScript. T
 **Project Structure**
 
 /todo-list-app
+
 │── index.html   # Main HTML file
 
 │── style.css    # Stylesheet for design
