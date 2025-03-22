@@ -43,6 +43,7 @@ Click the "Restart" button to play again.
 # Project Structure
 
 /tic-tac-toe
+
 │── index.html   # Main HTML file
 
 │── style.css    # Stylesheet for game design
