@@ -1,10 +1,10 @@
 ## Portfolio Website
 
-#Overview
+# Overview
 
 This is a personal portfolio website built using HTML, CSS, and JavaScript. The portfolio showcases projects, skills, and contact information in an interactive and responsive design.
 
-#Features
+# Features
 
 Professional and clean UI design
 
@@ -18,7 +18,7 @@ Contact form for inquiries
 
 Social media links
 
-#Technologies Used
+# Technologies Used
 
 HTML
 
@@ -36,7 +36,7 @@ Explore projects with descriptions and links to repositories.
 
 Use the contact form to send messages.
 
-#Project Structure
+# Project Structure
 
 /portfolio
 │── index.html   # Main HTML file
@@ -45,7 +45,7 @@ Use the contact form to send messages.
 │── assets/      # Images and other resources
 └── README.md    # Documentation
 
-#Installation
+# Installation
 
 Clone the repository or download the source files.
 
@@ -53,7 +53,7 @@ Open index.html in any modern web browser.
 
 Customize as needed.
 
-#Future Enhancements
+# Future Enhancements
 
 Add a blog section
 
@@ -61,10 +61,10 @@ Implement dark mode
 
 Integrate a backend for dynamic content management
 
-#License
+# License
 
 This project is open-source and free to use. Modify and distribute as needed.
 
-#Author
+# Author
 
 Developed by M.Rohit Reddy.
