@@ -6,17 +6,17 @@ This is a simple Tic-Tac-Toe game built using HTML, CSS, and JavaScript. The gam
 
 # Features
 
-Interactive 3x3 grid for gameplay
+* Interactive 3x3 grid for gameplay
 
-Alternating turns between Player X and Player O
+* Alternating turns between Player X and Player O
 
-Win detection for rows, columns, and diagonals
+* Win detection for rows, columns, and diagonals
 
-Display of game status (winner or draw)
+* Display of game status (winner or draw)
 
-Option to restart the game
+* Option to restart the game
 
-Responsive design for various screen sizes
+* Responsive design for various screen sizes
 
 # Technologies Used
 
