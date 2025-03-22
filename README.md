@@ -40,9 +40,13 @@ Use the contact form to send messages.
 
 /portfolio
 │── index.html   # Main HTML file
+
 │── style.css    # Stylesheet for design
+
 │── script.js    # JavaScript for interactions
+
 │── assets/      # Images and other resources
+
 └── README.md    # Documentation
 
 # Installation
