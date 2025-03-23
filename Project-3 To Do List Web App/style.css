@@ -1,0 +1,70 @@
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ea7e7e;
+        }
+        .container {
+            background: rgb(54, 227, 115);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px solid #1a5b34; /* Border with a dark green shade */
+            width: 900px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px; /* Adjust size as needed */
+            font-weight: bold;
+            color: black; /* Main text color */
+            text-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */    
+        }
+        table {
+            width: 100%;
+            margin-top: 10px;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        .btn {
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-delete {
+            background-color: red; /* Red background */
+            color: white; /* White text for better contrast */
+            border: 5px solid darkred; /* Dark red border */
+            padding: 10px 15px; /* Padding for better button appearance */
+            border-radius: 10px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor for better UX */
+            font-weight: bold; /* Bold text */
+        }
+        
+        .btn-delete:hover {
+            background-color: darkred; /* Darker red on hover */
+            border-color: red; /* Lighter border on hover */
+        }
+        
+        .btn-complete {
+            background-color: green;
+            color: rgb(10, 242, 91);
+        }
+        .completed {
+            text-decoration: line-through;
+            color: rgb(27, 184, 74);
+        }
+        .btn-edit {
+            background-color: red;
+            color: white;
+        }
+        
