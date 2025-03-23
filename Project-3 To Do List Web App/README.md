@@ -56,3 +56,6 @@ This is a simple To-Do List application built using HTML, CSS, and JavaScript. T
 * Open index.html in any modern web browser.
 
 * Start adding and managing your tasks!
+
+**Deployment Web Link**
+**https://dainty-shortbread-3bf1e7.netlify.app/**
