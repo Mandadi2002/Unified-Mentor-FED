@@ -24,17 +24,17 @@ Keyboard support for input
 
 # How to Use
 
-* Open the index.html file in a web browser.
+* Open the **index.html** file in a web browser.
 
-* Use the on-screen buttons or keyboard to input numbers and operators.
+* Use the **on-screen buttons or keyboard** to input numbers and operators.
 
-* Click the = button to compute the result.
+* Click the **=** button to compute the result.
 
-* Use the C button to clear the display and reset the calculator.
+* Use the **C** button to clear the display and reset the calculator.
 
-* How the Backspace (⌫) Works
+* How the **Backspace (⌫)** Works
  
-✅ Clicking ⌫ removes only the last character in the input field.
+✅ Clicking **⌫** removes only the last character in the input field.
 
 ✅ Works for numbers, operators, and symbols.
 
