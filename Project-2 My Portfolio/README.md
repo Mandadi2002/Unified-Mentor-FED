@@ -75,3 +75,5 @@ Developed by M.Rohit Reddy.
 
 **Deployment Link :** 
 **https://fanciful-wisp-a7dfd6.netlify.app/**
+**PPT Link:** 
+**https://github.com/Mandadi2002/Unified-Mentor-FED/blob/main/Project-2%20My%20Portfolio/Unified%20Mentor%20FED%20Projects%20PPT%20(2)%20(1).pptx**
