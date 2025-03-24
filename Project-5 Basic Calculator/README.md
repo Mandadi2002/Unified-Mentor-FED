@@ -96,4 +96,4 @@ Let's solve the expression: 3 + 2 * sqr root 4 - (6 / 3)
 * Add history tracking for previous calculations
 
 # Deployment Web App
-**https://steady-entremet-299d5a.netlify.app/**
+**https://scintillating-manatee-ec80e8.netlify.app/**
