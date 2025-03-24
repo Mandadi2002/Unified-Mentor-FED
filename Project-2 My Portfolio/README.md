@@ -72,3 +72,5 @@ This project is open-source and free to use. Modify and distribute as needed.
 # Author
 
 Developed by M.Rohit Reddy.
+
+# Deployment Link : https://fanciful-wisp-a7dfd6.netlify.app/
