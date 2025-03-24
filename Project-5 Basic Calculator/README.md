@@ -49,10 +49,12 @@ Keyboard support for input
 * Clone the repository or download the source files.
 
 * Open index.html in any modern web browser.
+* 
 **Testing with The BODMAS Rule:**
+  
 The BODMAS rule is a fundamental principle in mathematics that dictates the order of operations to be followed when solving expressions involving multiple arithmetic operations. The acronym BODMAS stands for Brackets, Orders, Division, Multiplication, Addition, and Subtraction
 
-Key Principles of BODMAS
+**Key Principles of BODMAS**
 
 Brackets (B): Solve expressions within brackets first. This includes parentheses (), curly braces {}, and square brackets [].
 
@@ -66,7 +68,7 @@ Addition (A): Perform addition operations from left to right.
 
 Subtraction (S): Perform subtraction operations from left to right.
 
-Example Calculation Using BODMAS
+*Example Calculation Using BODMAS*
 
 Let's solve the expression: 3 + 2 * 4 - (6 / 3)
 
