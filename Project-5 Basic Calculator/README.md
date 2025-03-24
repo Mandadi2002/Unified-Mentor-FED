@@ -32,6 +32,11 @@ Keyboard support for input
 
 * Use the C button to clear the display and reset the calculator.
 
+* How the Backspace (⌫) Works
+✅ Clicking ⌫ removes only the last character in the input field.
+✅ Works for numbers, operators, and symbols.
+✅ Prevents the user from clearing everything with "C".
+
 # Project Structure
 
 **/calculator-app**
