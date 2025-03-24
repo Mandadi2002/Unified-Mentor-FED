@@ -52,7 +52,7 @@ Keyboard support for input
 * 
 # Advanced mathematical functions
   
-* Advanced mathematical functions **square root, exponentiation and backspace buttons** added.
+* Advanced mathematical functions **square, power, and square root functions** added.
   
 # Testing with The BODMAS Rule:
   
