@@ -2,11 +2,11 @@
 
 # Overview
 
-This is a simple Basic Calculator Application built using HTML, CSS, and JavaScript. The app allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+This is a simple **Basic Calculator Application** built using HTML, CSS, and JavaScript. The app allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
 # Features
 
-Perform basic arithmetic operations (Addition, Subtraction, Multiplication, Division)
+Perform basic arithmetic operations **(Addition, Subtraction, Multiplication, Division)**
 
 Responsive and user-friendly UI
 
@@ -34,15 +34,15 @@ Keyboard support for input
 
 # Project Structure
 
-/calculator-app
+**/calculator-app**
 
-│── index.html   # Main HTML file
+**│── index.html**   # Main HTML file
 
-│── style.css    # Stylesheet for UI design
+**│── style.css**    # Stylesheet for UI design
 
-│── script.js    # JavaScript logic for calculator operations
+**│── script.js**   # JavaScript logic for calculator operations
 
-└── README.md    # Documentation
+**└── README.md**    # Documentation
 
 # Installation
 
@@ -52,7 +52,7 @@ Keyboard support for input
 * 
 # Advanced mathematical functions
   
-* Advanced mathematical functions square root, exponentiation and backspace buttons added.
+* Advanced mathematical functions **square root, exponentiation and backspace buttons** added.
   
 # Testing with The BODMAS Rule:
   
@@ -60,21 +60,21 @@ The BODMAS rule is a fundamental principle in mathematics that dictates the orde
 
 **Key Principles of BODMAS**
 
-Brackets (B): Solve expressions within brackets first. This includes parentheses (), curly braces {}, and square brackets [].
+**Brackets (B):** Solve expressions within brackets first. This includes parentheses (), curly braces {}, and square brackets [].
 
-Orders (O): Evaluate exponents and roots, such as squares and square roots.
+**Orders (O):** Evaluate exponents and roots, such as squares and square roots.
 
-Division (D): Perform division operations from left to right.
+**Division (D):** Perform division operations from left to right.
 
-Multiplication (M): Perform multiplication operations from left to right.
+**Multiplication (M):** Perform multiplication operations from left to right.
 
-Addition (A): Perform addition operations from left to right.
+**Addition (A):** Perform addition operations from left to right.
 
-Subtraction (S): Perform subtraction operations from left to right.
+**Subtraction (S):** Perform subtraction operations from left to right.
 
 **Example Calculation Using BODMAS**
 
-Let's solve the expression: 3 + 2 * 4 - (6 / 3)
+Let's solve the expression: 3 + 2 * sqr root 4 - (6 / 3)
 
 ![Screenshot 2025-03-24 082516](https://github.com/user-attachments/assets/9249556f-ada7-4a42-9660-72b558425718)
 ![Screenshot 2025-03-24 082355](https://github.com/user-attachments/assets/cde90d95-290b-45ec-8b28-ec70e3d61742)
