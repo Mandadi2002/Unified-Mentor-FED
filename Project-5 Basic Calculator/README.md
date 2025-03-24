@@ -69,8 +69,7 @@ Subtraction (S): Perform subtraction operations from left to right.
 Example Calculation Using BODMAS
 
 Let's solve the expression: 3 + 2 * 4 - (6 / 3)
-![image](https://github.com/user-attachments/assets/9845d3c2-8e1a-4f73-84cd-a3fe00d6a99e)
-![image](https://github.com/user-attachments/assets/6f809a28-2781-4005-9c11-b4b80f437956)
+
 ![Doc1](https://github.com/user-attachments/assets/f3446918-cf13-4903-87a3-75fb5c83f4df)
 
 
