@@ -50,6 +50,10 @@ Keyboard support for input
 
 * Open index.html in any modern web browser.
 * 
+**Advanced mathematical functions**
+  
+* Advanced mathematical functions square root, exponentiation and backspace buttons added.
+  
 **Testing with The BODMAS Rule:**
   
 The BODMAS rule is a fundamental principle in mathematics that dictates the order of operations to be followed when solving expressions involving multiple arithmetic operations. The acronym BODMAS stands for Brackets, Orders, Division, Multiplication, Addition, and Subtraction
@@ -72,12 +76,11 @@ Subtraction (S): Perform subtraction operations from left to right.
 
 Let's solve the expression: 3 + 2 * 4 - (6 / 3)
 
-![Doc1](https://github.com/user-attachments/assets/f3446918-cf13-4903-87a3-75fb5c83f4df)
+![Screenshot 2025-03-24 082117](https://github.com/user-attachments/assets/c40d87dc-2b86-4f39-87b9-ecd975e12213)
+![Screenshot 2025-03-24 082130](https://github.com/user-attachments/assets/f99ba53d-7dac-47d7-9860-da31a638abf4)
 
 
 **Future Enhancements**
-
-* Add support for advanced mathematical functions (square root, exponentiation, etc.)
 
 * Implement a dark mode theme
 
