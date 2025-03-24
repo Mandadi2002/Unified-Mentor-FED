@@ -76,8 +76,9 @@ Subtraction (S): Perform subtraction operations from left to right.
 
 Let's solve the expression: 3 + 2 * 4 - (6 / 3)
 
-![Screenshot 2025-03-24 082117](https://github.com/user-attachments/assets/c40d87dc-2b86-4f39-87b9-ecd975e12213)
-![Screenshot 2025-03-24 082130](https://github.com/user-attachments/assets/f99ba53d-7dac-47d7-9860-da31a638abf4)
+![Screenshot 2025-03-24 082355](https://github.com/user-attachments/assets/cde90d95-290b-45ec-8b28-ec70e3d61742)
+
+
 
 
 **Future Enhancements**
