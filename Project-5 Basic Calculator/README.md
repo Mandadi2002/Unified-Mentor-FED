@@ -68,7 +68,7 @@ Addition (A): Perform addition operations from left to right.
 
 Subtraction (S): Perform subtraction operations from left to right.
 
-*Example Calculation Using BODMAS*
+**Example Calculation Using BODMAS**
 
 Let's solve the expression: 3 + 2 * 4 - (6 / 3)
 
