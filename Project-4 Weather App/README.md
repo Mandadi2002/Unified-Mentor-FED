@@ -68,9 +68,7 @@ Error handling for invalid city names
 * Add a dark mode theme for better accessibility
 
 **Screenshots**
-
 ![Screenshot 2025-03-19 212403](https://github.com/user-attachments/assets/30c5827c-f790-4283-a2d9-df2aeb8ad13d)
 ![Screenshot 2025-03-19 212553](https://github.com/user-attachments/assets/6e6dbba0-f17a-47b3-a03f-bdbe29ae5517)
-
 **Deployment Web App**
 **https://sparkly-alpaca-058085.netlify.app/**
