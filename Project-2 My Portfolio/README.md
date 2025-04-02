@@ -57,10 +57,6 @@ This is a personal portfolio website built using HTML, CSS, and JavaScript. The 
 
 * Customize as needed.
 
-**Screenshots**
-
-![Screenshot 2025-03-24 155517](https://github.com/user-attachments/assets/d5d3500d-d26b-478f-b85a-71d4f403e827)
-
 # Future Enhancements
 
 * Add a blog section
