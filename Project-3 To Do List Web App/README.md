@@ -48,6 +48,9 @@ This is a simple To-Do List application built using HTML, CSS, and JavaScript. T
 
 └── README.md    # Documentation
 
+**Screenshots**
+
+![Screenshot 2025-03-24 175720](https://github.com/user-attachments/assets/84286a41-8773-4588-81ca-643d3162ca5e)
 
 **Installation**
 
