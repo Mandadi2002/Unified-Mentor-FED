@@ -68,6 +68,10 @@ Enjoy the game!
 
 * Keep track of player scores
 
+**Screenshots**
+
+![Screenshot 2025-03-07 213853](https://github.com/user-attachments/assets/15894999-1956-41a1-85c1-b4bee2231126)
+
 # License
 
 This project is open-source and free to use. Modify and distribute as needed.
