@@ -110,8 +110,10 @@ interactive-media-infographics/
 - Simulates or fetches media data dynamically from a JS array or JSON
 
 # 📷 Screenshots:
+
 - Audience Reach
 Percentage of audience reached through different media channels.
+
 ![Screenshot 2025-04-07 093139](https://github.com/user-attachments/assets/8e144c91-6908-463e-ab97-5edf021317bf)
 
 - News Coverage
