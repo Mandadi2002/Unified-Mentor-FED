@@ -149,3 +149,12 @@ Comparison of reach, engagement, and coverage across media channels.
 
 # 📚 Conclusion:
 This Interactive Media Infographics Web App demonstrates my ability to build complex and meaningful UI applications using HTML, CSS, and JavaScript. It offers a modern approach to visualizing multi-platform media analytics, helping users grasp key metrics at a glance. The project balances aesthetic appeal and functionality, aligning with real-world dashboard systems used in media monitoring and digital marketing.
+
+**Link**:
+
+https://chic-panda-d9e37f.netlify.app/
+
+**PPT**:
+
+[UM FED Internship (4 projects).pptx](https://github.com/user-attachments/files/19625672/UM.FED.Internship.4.projects.pptx)
+
