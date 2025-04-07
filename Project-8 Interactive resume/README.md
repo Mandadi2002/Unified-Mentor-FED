@@ -1,8 +1,10 @@
 # Project Report: Interactive Resume Web Application 
 
 # 👨‍💻 Developed By:
-Rohit Reddy Mandadi
+**Rohit Reddy Mandadi**
+
 B.E. in Computer Science and Engineering
+
 MVSREC (Dec 2020 – Nov 2024)
 
 # 🛠️ Technologies Used:
