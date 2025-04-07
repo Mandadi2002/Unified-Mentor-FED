@@ -79,7 +79,7 @@ The **CSS** file styles the UI including layout, cards, buttons, and transitions
 # 📷 Screenshots:
 ![image](https://github.com/user-attachments/assets/3a3267f4-c6a9-4187-ad6e-53fa6485a5f4)
 ![Screenshot 2025-04-07 082749](https://github.com/user-attachments/assets/b5e88d2c-9ea2-4f02-883f-e6418a4da309)
-![WhatsApp Image 2025-04-07 at 07 37 35_6a001c50](https://github.com/user-attachments/assets/6ba32743-6dee-4816-9828-675eaac19bba)
+![Screenshot 2025-04-07 082947](https://github.com/user-attachments/assets/b3b3339d-5472-446a-9d5f-d8fb05aaafb5)
 
 # ✅ Future Improvements:
 Add a feature to filter recipes by category (e.g., veg, non-veg, dessert).
