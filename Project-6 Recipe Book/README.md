@@ -3,9 +3,12 @@
 #Recipe Book Web Application
 
 # 👨‍💻 Developed By:
-Rohit Reddy Mandadi
+** Rohit Reddy Mandadi **
+
 B.E. in Computer Science and Engineering
+
 MVSREC (Dec 2020 – Nov 2024)
+
 Unified Mentor - Frpntend Development Internship
 
 # 🛠️ Technologies Used:
