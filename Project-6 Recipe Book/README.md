@@ -77,7 +77,8 @@ The **CSS** file styles the UI including layout, cards, buttons, and transitions
 **JavaScript** dynamically fetches and renders recipe data, handles search input, and updates the DOM accordingly.
 
 # 📷 Screenshots:
-(Add screenshots of your homepage, recipe detail page, and mobile view here.)
+![image](https://github.com/user-attachments/assets/3a3267f4-c6a9-4187-ad6e-53fa6485a5f4)
+
 
 # ✅ Future Improvements:
 Add a feature to filter recipes by category (e.g., veg, non-veg, dessert).
