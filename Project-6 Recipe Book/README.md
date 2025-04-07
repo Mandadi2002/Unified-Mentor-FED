@@ -3,7 +3,7 @@
 #Recipe Book Web Application
 
 # 👨‍💻 Developed By:
-** Rohit Reddy Mandadi **
+***Rohit Reddy Mandadi***
 
 B.E. in Computer Science and Engineering
 
