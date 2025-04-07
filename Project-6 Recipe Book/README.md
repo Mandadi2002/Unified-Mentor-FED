@@ -68,7 +68,7 @@ recipe-book/
 └── **/data**
 
     └── recipes.json (optional for external data storage)
-    
+ 
 # 💡 How It Works:
 The **HTML** file contains the basic structure and layout of the web page.
 
@@ -78,7 +78,8 @@ The **CSS** file styles the UI including layout, cards, buttons, and transitions
 
 # 📷 Screenshots:
 ![image](https://github.com/user-attachments/assets/3a3267f4-c6a9-4187-ad6e-53fa6485a5f4)
-
+![WhatsApp Image 2025-04-07 at 07 37 35_0b3f2836](https://github.com/user-attachments/assets/e8ed5591-7d8b-4369-ac51-ef66c2c3f346)
+![WhatsApp Image 2025-04-07 at 07 37 35_6a001c50](https://github.com/user-attachments/assets/6ba32743-6dee-4816-9828-675eaac19bba)
 
 # ✅ Future Improvements:
 Add a feature to filter recipes by category (e.g., veg, non-veg, dessert).
