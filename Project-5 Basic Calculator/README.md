@@ -97,3 +97,7 @@ Let's solve the expression: 3 + 2 * sqr root 4 - (6 / 3)
 
 # Deployment Web App
 **https://scintillating-manatee-ec80e8.netlify.app/**
+
+**PPT Link**
+
+[UM FED Internship (4 projects).pptx](https://github.com/user-attachments/files/19625713/UM.FED.Internship.4.projects.pptx)
