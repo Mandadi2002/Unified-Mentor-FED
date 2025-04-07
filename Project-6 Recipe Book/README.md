@@ -61,11 +61,11 @@ recipe-book/
 
 ├── **script.js**
 
-├── /images
+├── **/images**
 
-│   └── (Recipe images)
+│   └── **(Recipe images)**
 
-└── /data
+└── **/data**
 
     └── recipes.json (optional for external data storage)
     
