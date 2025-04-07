@@ -77,7 +77,7 @@ The **CSS** file styles the UI including layout, cards, buttons, and transitions
 **JavaScript** dynamically fetches and renders recipe data, handles search input, and updates the DOM accordingly.
 
 # 📷 Screenshots:
-![image](https://github.com/user-attachments/assets/3a3267f4-c6a9-4187-ad6e-53fa6485a5f4)
+![Screenshot 2025-04-07 083119](https://github.com/user-attachments/assets/c63ff32a-5a75-435f-8623-6c0745e9ff45)
 ![Screenshot 2025-04-07 082749](https://github.com/user-attachments/assets/b5e88d2c-9ea2-4f02-883f-e6418a4da309)
 ![Screenshot 2025-04-07 082947](https://github.com/user-attachments/assets/b3b3339d-5472-446a-9d5f-d8fb05aaafb5)
 
