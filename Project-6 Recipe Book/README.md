@@ -54,13 +54,21 @@ bash
 Copy
 Edit
 recipe-book/
+
 ├── **index.html**
+
 ├── **style.css**
+
 ├── **script.js**
+
 ├── /images
+
 │   └── (Recipe images)
+
 └── /data
+
     └── recipes.json (optional for external data storage)
+    
 # 💡 How It Works:
 The **HTML** file contains the basic structure and layout of the web page.
 
