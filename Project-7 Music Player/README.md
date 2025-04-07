@@ -90,3 +90,5 @@ music-player/
 
 # 📚 Conclusion:
 This project allowed me to explore the power of the HTML5 Audio API and hone my skills in JavaScript-based UI interactions, responsive web design, and media control. It demonstrates how rich media applications can be built using just frontend technologies, without any external libraries or frameworks.
+**Link**
+https://statuesque-cobbler-ac8274.netlify.app/
