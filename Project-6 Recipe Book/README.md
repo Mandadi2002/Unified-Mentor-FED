@@ -9,7 +9,7 @@ B.E. in Computer Science and Engineering
 
 MVSREC (Dec 2020 – Nov 2024)
 
-Unified Mentor - Frpntend Development Internship
+Unified Mentor - Front - End Development Internship
 
 # 🛠️ Technologies Used:
 Frontend: **HTML5, CSS3, JavaScript (Vanilla JS)**
