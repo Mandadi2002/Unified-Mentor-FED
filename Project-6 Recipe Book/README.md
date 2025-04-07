@@ -22,13 +22,13 @@ Design Tools: Google Fonts, Font Awesome (optional)
 The Recipe Book Web App is a simple and user-friendly application where users can browse, search, and view recipes in a clean interface. It is designed as a static web application using core frontend technologies with no backend. Users can view details like ingredients, cooking steps, and preparation time for various recipes.
 
 # 🎯 Objectives:
-To create a responsive and interactive interface for displaying recipes.
+- To create a responsive and interactive interface for displaying recipes.
 
-To allow users to search recipes dynamically using keywords.
+- To allow users to search recipes dynamically using keywords.
 
-To practice DOM manipulation and event handling using JavaScript.
+- To practice DOM manipulation and event handling using JavaScript.
 
-To improve skills in frontend development and UI/UX.
+- To improve skills in frontend development and UI/UX.
 
 # ✨ Key Features:
 Homepage with a list of recipes displayed in cards.
@@ -37,13 +37,13 @@ Homepage with a list of recipes displayed in cards.
 
 **Recipe Details** – clicking on a recipe shows full details including:
 
-Ingredients
+- Ingredients
 
-Steps
+- Steps
 
-Image
+- Image
 
-Estimated cooking time
+- Estimated cooking time
 
 **Responsive Design** – works well on desktops, tablets, and mobiles.
 
@@ -82,20 +82,20 @@ The **CSS** file styles the UI including layout, cards, buttons, and transitions
 ![Screenshot 2025-04-07 082947](https://github.com/user-attachments/assets/b3b3339d-5472-446a-9d5f-d8fb05aaafb5)
 
 # ✅ Future Improvements:
-Add a feature to filter recipes by category (e.g., veg, non-veg, dessert).
+- Add a feature to filter recipes by category (e.g., veg, non-veg, dessert).
 
-Include favorites/bookmark functionality using local storage.
+- Include favorites/bookmark functionality using local storage.
 
-Implement a form for users to add new recipes.
+- Implement a form for users to add new recipes.
 
-Use local storage or IndexedDB for persistent data without backend.
+- Use local storage or IndexedDB for persistent data without backend.
 
-Convert to a PWA (Progressive Web App) with offline support.
+- Convert to a PWA (Progressive Web App) with offline support.
 
 # 📚 Conclusion:
 This project helped enhance my skills in frontend development, especially in DOM manipulation, layout design, and responsive UI building. It also introduced the concepts of event handling and real-time search filtering. The recipe book is a great beginner-to-intermediate project showcasing a good mix of HTML, CSS, and JavaScript.
 
-# Link
+# Web Link
 
 https://celebrated-lily-7406a2.netlify.app/
 
