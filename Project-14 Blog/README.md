@@ -28,16 +28,27 @@ CopyEdit
 /blog-website/
 │
 ├── **index.html**
+
 ├── **about.html**
+
 ├── **blog.html**
+
 ├── **post.html**
+
 ├── **contact.html**
+
 ├── /css/
+
 │   └── **style.css**
+
 ├── /js/
+
 │   └── **script.js**
+
 └── /images/
+
     └── **(blog-related images)**
+    
 ________________________________________
 # 6. Development Process
 •	**Step 1**: Structure (HTML)
