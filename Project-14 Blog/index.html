@@ -1,0 +1,989 @@
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimpleBlog - MRR's Personal Blog</title>
+  <title>Dropdown Filter with Clear</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images\Tech Blogs Logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="light-theme">
+
+  <!--
+    - #HEADER
+  -->
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+            <img src="images/Screenshot 2025-04-14 150954.png" alt="Tech Blogs Logo" width="150" class="logo-light">
+            <img src="images/Screenshot 2025-04-14 150954.png" alt="Tech Blogs Logo" width="150" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#aboutme" class="nav-link">About Me</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contactme" class="nav-link">Contact</a>
+            </li>
+            <li>
+              <!--<a href="#" class="nav-link">Blog Navigation</a>-->
+              <li class="nav__item"><a href="#blognavigation" class="nav__link active-link">Blog Navigation</a></li>
+            </li>
+
+          </ul>
+
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dropdown Filter with Clear</title>
+  <style>
+    .search-container {
+      position: relative;
+      width: 250px;
+      margin: 50px auto;
+    }
+
+    #searchInput {
+      width: 100%;
+      padding: 8px 30px 8px 8px; /* space for clear button */
+      font-size: 16px;
+    }
+
+    .clear-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      border: 1px solid #ccc;
+      border-top: none;
+      z-index: 1000;
+      max-height: 150px;
+      overflow-y: auto;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown li {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .dropdown li:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+<!-- Search Container-->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search topics..." onkeyup="filterTopics()" onclick="showDropdown()" />
+    <button class="clear-btn" id="clearBtn" onclick="clearSearch()">×</button>
+    <ul id="topicDropdown" class="dropdown">
+      <li onclick="selectTopic('Database')">Database
+      </li>
+      <li onclick="selectTopic('Accessibility')">Accessibility</li>
+      <li onclick="selectTopic('Web Performance')">Web Performance</li>
+      <li onclick="selectTopic('Frontend Development')">Frontend Development</li>
+    </ul>
+  </div>
+
+  <script>
+    function filterTopics() {
+      const input = document.getElementById("searchInput");
+      const filter = input.value.toLowerCase();
+      const dropdown = document.getElementById("topicDropdown");
+      const items = dropdown.getElementsByTagName("li");
+      const clearBtn = document.getElementById("clearBtn");
+
+      let hasMatch = false;
+      for (let i = 0; i < items.length; i++) {
+        const txtValue = items[i].textContent || items[i].innerText;
+        if (txtValue.toLowerCase().indexOf(filter) > -1) {
+          items[i].style.display = "";
+          hasMatch = true;
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+
+      dropdown.style.display = hasMatch ? "block" : "none";
+      clearBtn.style.display = input.value ? "block" : "none";
+    }
+
+    function selectTopic(topic) {
+      const input = document.getElementById('searchInput');
+      input.value = topic;
+      document.getElementById('topicDropdown').style.display = 'none';
+      document.getElementById('clearBtn').style.display = 'block';
+    }
+
+    function showDropdown() {
+      const dropdown = document.getElementById('topicDropdown');
+      const items = dropdown.getElementsByTagName("li");
+
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "";
+      }
+
+      dropdown.style.display = 'block';
+    }
+
+    function clearSearch() {
+      const input = document.getElementById("searchInput");
+      const dropdown = document.getElementById("topicDropdown");
+      const clearBtn = document.getElementById("clearBtn");
+
+      input.value = "";
+      dropdown.style.display = "none";
+      clearBtn.style.display = "none";
+    }
+
+    document.addEventListener('click', function (event) {
+      const dropdown = document.getElementById('topicDropdown');
+      const input = document.getElementById('searchInput');
+      const clearBtn = document.getElementById('clearBtn');
+
+      if (!input.contains(event.target) && !dropdown.contains(event.target) && !clearBtn.contains(event.target)) {
+        dropdown.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+              
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">Blog Navigation</a>
+              </li>
+            </ul>
+
+          </div>
+
+          
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <section class="hero" id="home">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hi, I'm <b>Mandadi&nbsp;Rohit Reddy</b>.
+            <br>Web Developer
+          </h1>
+
+          <p class="h3">
+            Delivering top-notch <abbr title="Accessibility">a11y</abbr> and blazing-fast Core Web Vitals.
+          </p>
+
+          <!--Contact Section-->
+            <section class="contact section" id="contactme" style="text-align: left; margin-bottom: 10px;">
+              <div class="contactme">
+                <button class="btn btn-primary" onclick="toggleEmail()">Contact Me</button>
+                <span id="emailText" class="email-text" style="display: none;">mrohitreddy2002@gmail.com</span>
+              </div>
+           
+            <script>
+              function toggleEmail() {
+                const emailText = document.getElementById("emailText");
+                emailText.style.display = emailText.style.display === "none" ? "inline" : "none";
+              }
+            </script>
+            </section>
+            <script>
+              function toggleaboutMe() {
+                const aboutMe = document.getElementById("aboutMe");
+                aboutMe.style.display = aboutMe.style.display === "none" ? "block" : "none";
+              }
+            </script>
+            <!--About Me Section-->
+            <section class="contact-container" id="aboutme">
+              <button class="btn btn-secondary" onclick="toggleaboutMe()">About Me</button>
+              <p id="aboutMe" class="aboutMe-text" style="display: none;">
+                Passionate Innovator and outcome-oriented Frontend Developer with hands-on experience in HTML, CSS, JavaScript, and 
+                React.js. Skilled in building intuitive, responsive, and user-friendly web applications. Proficient in UI/UX design, state 
+                management, and API integration. Skilled at collaborating in adaptive multi-talent team environments to create scalable and high
+                performing solutions. Seeking a challenging role to enhance digital experiences through innovative web development.
+              </p>
+            </section>
+        </div>
+        <!--Hero Section-->
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="images/hero.png" alt="Mandadi Rohit Reddy" class="hero-img">
+            <!--<div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>  -->
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+</section>
+
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+         <!-- Blog 1-->
+        
+         <div class="blog">
+
+          <h2 class="h2">Latest Blog Post</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/istockphoto-1304450711-170667a.jpg" alt="Understanding Databases: The Heart of Every Application"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <!--<h3><button class="blog-topic text-tiny">Database</button>
+                  
+                <a herf='file:///D:/UNIFIED%20MENTOR/MONTH-4%20PROJECTS/blog/MRR%20TECH%20BLOGS/index.html#' class="h3"></a>
+              </h3>-->
+              <h3>
+                <button class="blog-topic text-tiny" onclick="selectTopic('Database')">Database</button>
+              </h3>
+              
+               <h3>
+                  <a href="D:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\blogs\database\blog1.html" class="h3">
+                    Understanding Databases: The Heart of Every Application
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  In today’s digital world, data is everything. Whether you're building a simple website or a 
+                  full-scale enterprise application, chances are, you’ll need a database to store, manage, and retrieve information. 
+                  But what exactly is a database, and why is it so important?
+                  Let’s dive into the basics of databases and understand why they’re the backbone of modern software.
+                  💡 What is a Database?
+                  A database is an organized collection of data that can be easily accessed, managed, and updated. Think of it as a 
+                  digital filing cabinet where all your information—like usernames, passwords, product details, orders, 
+                  or even posts like this one—is stored in a structured manner.
+
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/MRR TechWave Logo_11zon (1) (1)-Photoroom (1).png" alt="Tech Blogs" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tech Blogs</a>
+
+                    <p class="text-sm">
+                      <time datetime="2025-04-15">April 15, 2025</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                    
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+            <!-- Comment section-->
+            <div class="blog-card">
+              
+              <div class="blog-content-wrapper">
+                <img src="images/MRR TechWave Logo_11zon (1) (1)-Photoroom (1).png" alt="Tech Blogs" width="50">
+                <div class="wrapper">
+                  <a href="#" class="h4">Tech Blogs</a>
+                <button class="blog-topic text-tiny">Comments Section</button>
+
+                <h3>
+                  
+                    <div class="comment-toggle">
+                      <button onclick="toggleComments()" class="btn btn-secondary">Show Comments</button>
+                    </div>
+                    
+                    <div class="comment-section" id="commentSection" style="display: none;">
+                      <h3>Leave a Comment</h3>
+                      <form id="commentForm">
+                        <input type="text" id="name" placeholder="Your name" required />
+                        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    
+                      <div id="commentsDisplay">
+                        <h4>Comments:</h4>
+                        <ul id="commentList"></ul>
+                      </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+           
+            </div> 
+
+          <!-- Blog 2-->
+            <div class="blog">
+
+              
+              <div class="blog-card-group">
+    
+                <div class="blog-card">
+    
+                  <div class="blog-card-banner">
+                    <img src="d:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\images\OIP.jpeg" alt="Accessibility in HTML, CSS & JavaScript: Building Inclusive Web Experiences"
+                      width="250" class="blog-banner-img">
+                  </div>
+    
+                  <div class="blog-content-wrapper">
+                    <section class="blog-post" id="accessibility-blog">
+                    <h3><button class="blog-topic text-tiny">Accessibility</button>
+                
+                  </h3>
+                   <h3>
+                      <a href="blogs\accessibility\blog2.html" class="h3">
+                        Accessibility in HTML, CSS & JavaScript: Building Inclusive Web Experiences
+                      </a>
+                    </h3>
+    
+                    <p class="blog-text">
+                      “The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.”
+                     – Tim Berners-Lee, inventor of the World Wide Web
+
+                     In today's world, building websites isn't just about aesthetics and functionality — it's also about making sure everyone can access and interact with your content. That’s where web accessibility comes into play.
+
+                     Let’s explore how HTML, CSS, and JavaScript can be used to create inclusive and accessible web experiences for users of all abilities.
+    
+                    </p>
+                  </section>
+                    <div class="wrapper-flex">
+    
+                      <div class="profile-wrapper">
+                        <img src="images/MRR TechWave Logo_11zon (1) (1)-Photoroom (1).png" alt="Tech Blogs" width="50">
+                      </div>
+    
+                      <div class="wrapper">
+                        <a href="#" class="h4">Tech Blogs</a>
+    
+                        <p class="text-sm">
+                          <time datetime="2025-04-15">April 15, 2025</time>
+                          <span class="separator"></span>
+                          <ion-icon name="time-outline"></ion-icon>
+                          <time datetime="PT3M">3 min</time>
+                        </p>
+                      
+                
+                            <div class="comment-toggle">
+      <button onclick="toggleComments()" class="btn btn-secondary">Show Comments</button>
+    </div>
+    
+    <div class="comment-section" id="commentSection" style="display: none;">
+      <h3>Leave a Comment</h3>
+      <form id="commentForm">
+        <input type="text" id="name" placeholder="Your name" required />
+        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    
+      <div id="commentsDisplay">
+        <h4>Comments:</h4>
+        <ul id="commentList"></ul>
+      </div>
+    </div>                     
+                          </div>
+                        </div>
+                        
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+            
+                <!-- Blog 3-->
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/How-to-Host-Your-Website-on-Github-for-Free-copy.webp" alt="🚀 How to Deploy Your Website for Free Using GitHub Pages"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Web Performance</button>
+
+                
+                  <a href="D:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\blogs\web development\blog3.html" class="h3">
+                    How to Deploy Your Website for Free Using GitHub Pages
+                      </a>
+                <p class="blog-text">
+                  So, you’ve built a cool website using HTML, CSS, and maybe even some JavaScript. 
+                  What now? You probably want the world to see it, right?
+                 
+                  Well, the good news is—you can host your website online for free using GitHub Pages. 
+                  No need to buy a domain or set up a complex server. In this blog, I’ll walk you through the process step by step.
+
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/MRR TechWave Logo_11zon (1) (1)-Photoroom (1).png" alt="Tech Blogs" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tech Blogs</a>
+
+                    <p class="text-sm">
+                      <time datetime="2025-04-20">April 20, 2025</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                    <div class="comment-toggle">
+                      <button onclick="toggleComments()" class="btn btn-secondary">Show Comments</button>
+                    </div>
+                    
+                    <div class="comment-section" id="commentSection" style="display: none;">
+                      <h3>Leave a Comment</h3>
+                      <form id="commentForm">
+                        <input type="text" id="name" placeholder="Your name" required />
+                        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    
+                      <div id="commentsDisplay">
+                        <h4>Comments:</h4>
+                        <ul id="commentList"></ul>
+                      </div>
+                    </div> 
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+           <!-- Blog 4-->
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="d:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\images\642135634_1648626046.jpg" alt="🔥 Top 10 Python Libraries for Machine Learning in 2025"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">AI & ML</button>
+
+                
+                  <a href="D:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\blogs\Machine Learning\blog4.html" class="h3">
+                    🔥 Top 10 Python Libraries for Machine Learning in 2025
+                      </a>
+                <p class="blog-text">
+                  Machine Learning (ML) continues to evolve rapidly in 2025, and Python remains the go-to language for both beginners and professionals.
+                  Its rich ecosystem of libraries makes it easier than ever to build, train, and deploy powerful ML models.
+                 
+                  Here are the top 10 Python libraries you should know if you're working with machine learning this year:
+                  Scikit-learn, TensorFlow 2.x, PyTorch, XGBoost, LightGBM, Pandas, Numpy,  Seaborn & Matplotlib., CatBoost, Optuna.
+
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/MRR TechWave Logo_11zon (1) (1)-Photoroom (1).png" alt="Tech Blogs" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tech Blogs</a>
+
+                    <p class="text-sm">
+                      <time datetime="2025-04-20">April 20, 2025</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                    <div class="comment-toggle">
+                      <button onclick="toggleComments()" class="btn btn-secondary">Show Comments</button>
+                    </div>
+                    
+                    <div class="comment-section" id="commentSection" style="display: none;">
+                      <h3>Leave a Comment</h3>
+                      <form id="commentForm">
+                        <input type="text" id="name" placeholder="Your name" required />
+                        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    
+                      <div id="commentsDisplay">
+                        <h4>Comments:</h4>
+                        <ul id="commentList"></ul>
+                      </div>
+                    </div> 
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- Blog 5-->
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="images/cyber_safety.jpg" alt="🛡️ What Is Cybersecurity? A Beginner’s Guide to Staying Safe Online"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Cybersecurity</button>
+
+                
+                  <a href="D:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\blogs\Cybersecurity\blog5.html" class="h3">
+                    🛡️ What Is Cybersecurity? A Beginner’s Guide to Staying Safe Online
+                      </a>
+                <p class="blog-text">
+                  This blog introduces the concept of cybersecurity, explains common threats, and offers beginner-friendly safety 
+
+                  tips. In today's digital world, cybersecurity is no longer just for tech professionals —  
+
+                  it's essential for everyone. Whether you're a student, a remote worker, or just someone who uses social media,
+
+                  you need to understand how to stay safe online.
+
+
+
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="images/MRR TechWave Logo_11zon (1) (1)-Photoroom (1).png" alt="Tech Blogs" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Tech Blogs</a>
+
+                    <p class="text-sm">
+                      <time datetime="2025-04-20">April 20, 2025</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                    <div class="comment-toggle">
+                      <button onclick="toggleComments()" class="btn btn-secondary">Show Comments</button>
+                    </div>
+                    
+                    <div class="comment-section" id="commentSection" style="display: none;">
+                      <h3>Leave a Comment</h3>
+                      <form id="commentForm">
+                        <input type="text" id="name" placeholder="Your name" required />
+                        <textarea id="comment" placeholder="Write your comment..." required></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                    
+                      <div id="commentsDisplay">
+                        <h4>Comments:</h4>
+                        <ul id="commentList"></ul>
+                      </div>
+                    </div> 
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            
+        <!--  Blog Navigation   -->
+       <!-- <section> <nav class="blog-nav">
+          <h2>Blog Navigation</h2>
+          <ul> -->
+            <section class="blognavigation section" id="blognavigation" style="text-align: left; margin-bottom: 10px;">
+              <div class="blog-nav">
+                  <h2><i class="fa-solid fa-graduation-cap"></i> Blog Navigation</h2>
+            
+                  <section> 
+                      <div class="icon-box">
+              <ion-icon name="server-outline"></ion-icon>Database</br>
+            </div>
+
+            <li><a href="blogs/database/blog1.html">✍️Understanding Databases</a></li>
+          </section>
+            <div class="icon-box">
+              <ion-icon name="accessibility-outline"></ion-icon>Accessibility</br>
+            </div>
+            </a><li><a href="blogs/accessibility/blog2.html">✍️Accessibility Tips for Web Developers</a></li>
+    
+            <div class="icon-box">
+              <ion-icon name="rocket-outline"></ion-icon>Web performance</br>
+            </div>
+            <li><a href="blogs/web development/blog3.html">✍️How to Deploy Your Website for Free Using GitHub Pages</a></li>
+            <div class="icon-box">
+              <ion-icon name="rocket-outline"></ion-icon>AI and ML</br>
+              <li><a href="blogs/Machine Learning/blog4.html">✍️Top 10 Python Libraries for Machine Learning in 2025</a></li>
+            </div>
+              <div class="icon-box">
+                <ion-icon name="rocket-outline"></ion-icon>Cyber Security</br>
+                <li><a href="blogs/Cybersecurity/blog5.html">✍️What Is Cybersecurity? A Beginner’s Guide to Staying Safe Online</a></li>
+            </div>
+          </ul>
+        </nav>
+      </section>
+
+
+        <!--
+          - ASIDE
+        -->
+
+          <div class="tags">
+
+            <h2 class="h2">Tags</h2>
+
+            <div class="wrapper">
+
+              <button class="hashtag">#Databases</button>
+              <button class="hashtag">#nodejs</button>
+              <button class="hashtag">#CRUDOperations </button>
+              <button class="hashtag">#Scalability</button>
+              <button class="hashtag">#a11y</button>
+              <button class="hashtag">#UXDesign</button>
+              <button class="hashtag">#ScikitLearn</button>
+              <button class="hashtag">#TensorFlow</button>
+              <button class="hashtag">#PyTorch</button>
+              <button class="hashtag">#XGBoost</button>
+              <button class="hashtag">#Pandas</button>
+              <button class="hashtag">#NumPy </button>
+              <button class="hashtag">#CatBoost</button>
+              <button class="hashtag">#TopMLLibraries</button>
+              <button class="hashtag">#performance</button>
+              <button class="hashtag">#html</button>
+              <button class="hashtag">#css</button>
+              <button class="hashtag">#javascript</button>
+              <button class="hashtag">#Cybersecurity</button>
+              <button class="hashtag">#PhishingAwareness</button>
+              <button class="hashtag">#MalwareProtection</button>
+              <button class="hashtag">#Ransomware</button>
+              <button class="hashtag">#CybersecurityAwareness</button>
+            </div>
+
+          </div>
+
+
+          <div class="newsletter">
+
+            <h2 class="h2">Newsletter</h2>
+          
+            <div class="wrapper">
+              <p>
+                Subscribe to our newsletter to be among the first to keep up with the latest updates.
+              </p>
+          
+              <form action="#">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+          
+              <!-- Social Sharing Buttons -->
+              <div class="social-share">
+                <p><h2>Share this page:</h2></p>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com" target="_blank" class="social-btn facebook">Facebook</a>
+                <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&text=Check+this+out!" target="_blank" class="social-btn twitter">Twitter</a>
+                <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://yourwebsite.com" target="_blank" class="social-btn linkedin">LinkedIn</a>
+                <a href="https://api.whatsapp.com/send?text=Check+this+out!+https://yourwebsite.com" target="_blank" class="social-btn whatsapp">WhatsApp</a>
+              </div>
+          
+            </div>
+          
+          </div>
+          
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!--
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="images/Screenshot 2025-04-14 150954.png" alt="SimpleBlog Logo" width="150" class="logo-light">
+          <img src="images/Screenshot 2025-04-14 150954.png" alt="SimpleBlog Logo" width="150" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+          Learn about Web accessibility, Web performance, Database management, AI & ML and Cybersecurity.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Advertise with us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+              <!-- Button to Open Modal -->
+            <a href="javascript:void(0);" class="footer-link" <button onclick="openModal()" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px;">
+              View Terms of Use
+            </button></a>
+          </li>
+  
+
+<!-- The Modal -->
+<div id="termsModal" style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.5);">
+  <div style="background-color: white; margin: 10% auto; padding: 20px; border-radius: 10px; width: 80%; max-width: 700px;">
+    <span onclick="closeModal()" style="float: right; font-size: 22px; cursor: pointer;">&times;</span>
+    <h2>Terms of Use – MRR Tech Blogs</h2>
+    <p><strong>Effective Date:</strong> April 16, 2025</p>
+    <p>Welcome to <strong>MRR Tech Blogs</strong> ("we", "our", or "the Blog"). By accessing or using this website, you agree to the following Terms of Use:</p>
+    
+    <h3>1. Content Usage</h3>
+    <ul>
+      <li>All content is for informational and educational purposes only.</li>
+      <li>Sharing is allowed with proper credit and link to the original article.</li>
+      <li>No unauthorized reproduction or commercial use without permission.</li>
+    </ul>
+
+    <h3>2. User Conduct</h3>
+    <ul>
+      <li>Don’t use the site for illegal or harmful purposes.</li>
+      <li>Don’t post spam, offensive content, or attempt to hack the site.</li>
+    </ul>
+
+    <h3>3. External Links</h3>
+    <p>We are not responsible for content on third-party sites linked from this blog.</p>
+
+    <h3>4. Disclaimer</h3>
+    <p>Content is provided as-is. We are not liable for any use or misuse of the information.</p>
+
+    <h3>5. Privacy</h3>
+    <p>Any personal data collected will be handled as per our upcoming <em>Privacy Policy</em>.</p>
+
+    <h3>6. Changes to Terms</h3>
+    <p>We may update these terms anytime. Continued use means acceptance of changes.</p>
+
+    <h3>7. Contact</h3>
+    <p>Have questions? Reach out via our contact form or email.</p>
+  </div>
+</div>
+
+<script>
+  function openModal() {
+    document.getElementById("termsModal").style.display = "block";
+  }
+
+  function closeModal() {
+    document.getElementById("termsModal").style.display = "none";
+  }
+
+  // Optional: close modal when clicking outside it
+  window.onclick = function(event) {
+    const modal = document.getElementById("termsModal");
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2025 <a href="#">MRR Tech Blogs</a>
+    </p>
+
+  </footer>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
