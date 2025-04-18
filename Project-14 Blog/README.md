@@ -1,6 +1,6 @@
 # 📄 Project Report: Blog Website
 # 1. Project Title
-My Blog Website – A personal blog platform built with HTML, CSS, and JavaScript
+**My Blog Website** – A personal blog platform built with HTML, CSS, and JavaScript
 ________________________________________
 2. Objective
 The aim of this project is to design and develop a simple, responsive, and interactive blog website where users can read blog posts, navigate through categories, and experience a clean and modern UI/UX.
