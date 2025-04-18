@@ -97,7 +97,7 @@ ________________________________________
 
 This project provided a great opportunity to practice JavaScript’s Date object and DOM manipulation. Building the countdown timer helped reinforce concepts like time calculations, intervals, user input handling, and responsive web design.
 
-# 10. Website Link: https://prismatic-licorice-39f5da.netlify.app/
+# 10. Website Link: 
 ![image](https://github.com/user-attachments/assets/e523f629-97b2-4607-bd72-213f29bb039d)
 
 # 11. PPT Link: https://github.com/Mandadi2002/Unified-Mentor-FED/blob/main/Project-13%20CountDown%20Timer/FED%20Internship-Count%20Down%20Timer.pptx
