@@ -26,6 +26,7 @@ ________________________________________
 bash
 CopyEdit
 /blog-website/
+
 │
 ├── **index.html**
 
@@ -47,7 +48,7 @@ CopyEdit
 
 └── /images/
 
-    └── **(blog-related images)**
+    └── (blog-related images)
     
 ________________________________________
 # 6. Development Process
