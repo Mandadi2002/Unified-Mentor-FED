@@ -97,3 +97,5 @@ This project helped strengthen skills in front-end web development and provided 
 
 # 10. Website Link: https://lambent-nougat-6dd12d.netlify.app/
 
+PPT Link: "D:\UNIFIED MENTOR\MONTH-4 PROJECTS\blog\MRR TECH BLOGS\Blog Website.pptx"
+
