@@ -20,20 +20,19 @@ o	**Figma/Canva** – For prototyping UI design (if used)
 
 ________________________________________
 # 4. Key Features
-•	Home Page: Introduction and featured blog posts
+•	**Home Page**: Introduction and featured blog posts
 
-•	Navigation Bar: Responsive menu with links to different sections (Home, About, Blog, Contact)
+•	**Navigation Bar**: Responsive menu with links to different sections (Home, About, Blog, Contact)
 
-•   Blog Section: List of blog posts with title, date, category, and read more links
+•   **Blog Section**: List of blog posts with title, date, category, and read more links
 
-•	Single Post Page: Detailed view of an individual blog post
+•	**Single Post Page**: Detailed view of an individual blog post
 
-•	Search Functionality: Allows users to search blog posts (basic JS filter)
+•	**Search Functionality**: Allows users to search blog posts (basic JS filter)
 
-•	Responsive Design: Mobile and tablet-friendly layout using media queries
+•	**Responsive Design**: Mobile and tablet-friendly layout using media queries
 
-•	Footer: Includes social media links, copyright
-
+•	**Footer**: Includes social media links, copyright, Terms of use.
 ________________________________________
 # 5. Folder Structure
 bash
