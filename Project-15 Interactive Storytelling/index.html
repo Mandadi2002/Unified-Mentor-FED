@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikram and Betal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <nav class="navbar">
+  <div class="navbar-brand">📚 Interactive Storytelling</div>
+  <ul class="navbar-menu">
+    <div class="controls">
+      <button onclick="startStory()">Start Story</button>
+      <button onclick="nextPage()">Next Page</button>
+      <button onclick="previousPage()">Previous Page</button>
+      <button onclick="restartStory()">Restart</button>
+      <button onclick="stopStory()">Stop Story</button>
+      
+      
+    </div>
+  
+    <li class="dropdown">
+      <a href="#">Stories ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#vikram-and-betal">Vikram and Betal</a></li>
+    
+        <li><a href="#bitter-truth">Story-1: The Bitter Truth</a></li>
+        
+        <li><a href="#">Story2</a></li>
+        <li><a href="#">Story3</a></li>
+      </ul>
+    </li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#" onclick="location.reload()">🔄 Refresh</a></li> <!-- Refresh button -->
+  </ul>
+</nav>
+
+
+<!-- About Popup Modal -->
+<div id="about" class="aboutsection">
+  <div class="modal-content">
+    <span class="close" onclick="closeAboutModal()">&times;</span>
+    <h2>About This Project</h2>
+    <p>
+      <strong>“Vikram and Betal”</strong> is an interactive storytelling experience designed for Solving riddles and puzzles for raised questions by a ghost betal.
+    </p>
+    <p>
+      The project aims is The Vikram and Betal stories are not just entertaining—they're packed with wisdom, morals, and life lessons to teach  while immersing users in a dynamic and responsive journey. 
+      It’s built using HTML, CSS, and JavaScript, with plans for future stories to be added to this collection.
+    </p>
+    <p>
+      Created by <strong>Rohit Reddy Mandadi</strong> as part of a Frontend Development.
+    </p>
+  </div>
+</div>
+
+<div id="page-0" class="page active">
+  <img src="images\Cover Page.png" alt="Family">
+  <p><b>🌿 Cover Page: Vikram and Betal</b><br>
+    The Vikram and Betal stories are a collection of ancient Indian tales that combine mystery, morality, wit and solving riddles and puzzles.<br>
+  </p>
+  <audio id="narration-1" src="page1.mp3"></audio>
+</div>
+ 
+
+
+
+<!-- Vikram and Betal-->
+<section id="vikram-and-betal" class="vikram-and-betal-section">
+  <header class="story-header">
+    <h1>Vikramaditya met Betal</h1>
+    <p class="tagline">The Beginning of Vikram and Betal</p>
+  </header>
+
+  
+
+  <!-- Pages -->
+   
+  <div id="page-1" class="page active">
+    <div class="page-number"><b>Page 1</b></div>
+    <img src="images/Page1.png" alt="Family">
+    <p>Once upon a time. There lived a great and noble king named Vikramaditya, renowned for his bravery, wisdom, and sense of justice.</p>
+    <audio id="narration-1" src="page1.mp3"></audio>
+    <button onclick="document.getElementById('narration-1').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-2" class="page">
+    <div class="page-number"><b>Page 2</b></div>
+    <img src="images/Page2.png" alt="Sons">
+    <p> His kingdom was prosperous, and people respected him for his fair rule.</p>
+    <audio id="narration-2" src="page2.mp3"></audio>
+    <button onclick="document.getElementById('narration-2').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-3" class="page">
+    <div class="page-number"><b>Page 3</b></div>
+    <img src="images/Page3.png" alt="Songs Arguing">
+    <p>One day, a mysterious tantrik also known as a sorcerer came to Vikram’s court. He was learned and appeared harmless. He offered to perform a special ritual for the king, which could bring immense power and fortune.</p>
+    <audio id="narration-3" src="page3.mp3"></audio>
+    <button onclick="document.getElementById('narration-3').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-4" class="page">
+    <div class="page-number"><b>Page 4</b></div>
+    <img src="images/Page4.png" alt="Father decision">
+    <p>"Your Holiness, for the prosperity of my kingdom, I'm ready to help you. 
+      Tell me, what can I do for you?"
+      asked the king.</p>
+    <audio id="narration-4" src="page4.mp3"></audio>
+    <button onclick="document.getElementById('narration-4').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-5" class="page">
+    <div class="page-number"><b>Page 5</b></div>
+    <img src="images/Page5.png" alt="Father give a task to his three sons">
+    <p>The sorcerer replied "O king, I want a bravery and wit person that will be you.
+      You are the one that I will assign you a job.</p>
+    <audio id="narration-5a" src="page5a.mp3"></audio>
+    <audio id="narration-5b" src="page5b.mp3"></audio>
+    <button onclick="document.getElementById('narration-5a').play()">▶️ Play Narration-storyteller</button>
+    <button onclick="document.getElementById('narration-5b').play()">▶️ Play Narration-sorcerer</button>
+  </div>
+  <div id="page-6" class="page">
+    <div class="page-number"><b>Page 6</b></div>
+    <img src="images/Page5.png" alt="Digging">
+    <div class="page-number"><b>Page 6</b></div>
+    <p>The Sage Explained "There is a forest which is twenty-five miles away from your capital. As you move to a deep in the forest, at once you will find a Peepal tree. From the branch of it, a corpse can be seen hanging upside down. 
+
+      Your job is to bring a corpse to me. The corpse is in the form of ghost named "Betaal". I want to keep the ghost In my captivity. This will increase my occult power immensely and then I'll be helpful for the goodness of your kingdom and bring prosperity to the subjects and the treasury.</p>
+    <audio id="narration-6a" src="page6a.mp3"></audio>
+    <audio id="narration-6b" src="page6b.mp3"></audio>
+    <button onclick="document.getElementById('narration-6a').play()">▶️ Play Narration-storyteller</button>
+    <button onclick="document.getElementById('narration-6b').play()">▶️ Play Narration-sorcerer</button>
+  </div>
+  <div id="page-7" class="page">
+    <div class="page-number"><b>Page 7</b></div>
+    <img src="images/Page7.png" alt="Sons Arguing to the Father">
+    <p>The King thought for a while and then accept the challenge for his people. The sorcerer briefed him across the path and the place of his mission. He asked him to proceed on his goal on to the next moon night and bring the corpse to the crematorium where he himself would be found waiting for the king.</p>
+    <audio id="narration-7" src="page7.mp3"></audio>
+    <button onclick="document.getElementById('narration-7').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-8" class="page">
+    <div class="page-number"><b>Page 8</b></div>
+    <img src="images/Page8.png" alt="Father give another Task to three sons">
+    <p>On a moon night, The King reached to the deep forest while riding his horse</p>
+    <audio id="narration-8" src="page8.mp3"></audio>
+    <button onclick="document.getElementById('narration-8').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-9" class="page">
+    <div class="page-number"><b>Page 9</b></div>
+    <img src="images/Page9.png" alt="The sons planted seeds">
+    <p>The King saw a peepal tree where the ghost was hanging on the branch upside down.</p>
+    <audio id="narration-9" src="page9.mp3"></audio>
+    <button onclick="document.getElementById('narration-9').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-10" class="page">
+    <div class="page-number"><b>Page 10</b></div>
+    <img src="images/Page10.png" alt="Father understand to this sons">
+    <p>The King pulled the ghost on his shoulder and began walking to the creamatorium.</p>
+    <audio id="narration-10" src="page10.mp3"></audio>
+    <button onclick="document.getElementById('narration-10').play()">▶️ Play Narration-storyteller</button>
+  </div>
+  <div id="page-11" class="page">
+    <div class="page-number"><b>Page 11</b></div>
+    <img src="images/Page11.png" alt="Moral">
+    <p>"Who are you and why do you want to take me with you?" The Betaal asked a question and Vikram answered I'm Vikramaditya, the king , I am taking you to the capital's crematorium where a sorcerer is waiting for you replied the king.</p>
+    <audio id="narration-11a" src="page11a.mp3"></audio>
+    <audio id="narration-11b" src="page11b.mp3"></audio>
+    <button onclick="document.getElementById('narration-11a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-11b').play()">▶️ Play Narration-King Vikramaditya</button>
+  </div>
+
+  <div id="page-12" class="page">
+    <div class="page-number"><b>Page 12</b></div>
+    <img src="images/Page12.png" alt="Moral">
+    <p>I am ready to walk with you. But on one condition said Betal, Vikram asked "What's the condition?".</p>
+    <audio id="narration-12a" src="page12a.mp3"></audio>
+    <audio id="narration-12b" src="page12b.mp3"></audio>
+    <button onclick="document.getElementById('narration-12a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-12b').play()">▶️ Play Narration-King Vikramaditya</button>
+  </div>
+
+  <div id="page-13" class="page">
+    <div class="page-number"><b>Page 13</b></div>
+    <img src="images/Page12.png" alt="Moral">
+    <p>On the way to your destination, I'll tell you an interesting story. You must listen to the story carefully and quietly. If you speak anything during the journey, I'll return to the peepal tree.
+      Vikramaditya I've hered a lot about your wisdom and bravery. I expect you at the end of the story , I will ask you a question that you will answer. If you ignore the answering to my question the your head will be cut off into pieces.
+    </p>
+    <audio id="narration-13a" src="page13a.mp3"></audio>
+    <audio id="narration-13b" src="page13b.mp3"></audio>
+    <button onclick="document.getElementById('narration-13a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-13b').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-14" class="page">
+    <div class="page-number"><b>Page 14</b></div>
+    <img src="images/Page14.png" alt="Moral">
+    <p>Vikram accepts the condition that I'll try to solve the answer to the best for my ability". Then Betaal laughed Ha Ha Ha. Then It's Ok I will tell you an interesting story that you have to listen to me very carefully.
+    </p>
+    <audio id="narration-14a" src="page14a.mp3"></audio>
+    <audio id="narration-14b" src="page14b.mp3"></audio>
+    <button onclick="document.getElementById('narration-14a').play()">▶️ Play Narration-King Vikramaditya</button>
+    <button onclick="document.getElementById('narration-14b').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <audio id="background-music" loop>
+    <source src="your-background-music.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</section>
+ 
+<!--Story-1-->
+
+<section id="bitter-truth" class="bitter-truth-section">
+  <header class="story-header">
+    <h1>The Bitter Truth</h1>
+    <p class="tagline">This story is about Never let doubt overpower truth, and never let jealousy ruin loyalty.</p>
+  </header>
+
+
+  <!-- Pages -->
+   
+  <div id="page-15" class="page active">
+    <h2>Page 15</h2> <!-- This is the page number -->
+    <img src="images/Page15.png" alt="Betal starts narrating the story">
+    <div class="page-number"><b>Page 15</b></div>
+    <p>Betaal starts narrating the story to the king. In ancient time there was a kingdom named Siddhapura. A kind, caring and able king named Vasantdev.</p>
+    <audio id="narration-15a" src="Page15a.mp3"></audio>
+    <audio id="narration-15b" src="Page15b.mp3"></audio>
+    <button onclick="document.getElementById('narration-15a').play()">▶️ Play Narration-storyteller</button>
+    <button onclick="document.getElementById('narration-15b').play()">▶️ Play Narration-Betaal</button>
+  </div>
+  
+  <div id="page-16" class="page active">
+    <div class="page-number"><b>Page 16</b></div>
+    <img src="images/Page16.png" alt="The King Vasanthdev's court">
+    <p>King Vasanthdev's court was always open for the grieved and needy. Anyone could approach the king with his or her problems and grievances and that made The King very special and different from others.</p>
+    <audio id="narration-16" src="Page16.mp3"></audio>
+  
+    <button onclick="document.getElementById('narration-16').play()">▶️ Play Narration-Betaal</button>
+    
+  </div>
+  
+  <div id="page-17" class="page active">
+    <div class="page-number"><b>Page 17</b></div>
+    <img src="images/Page17.png" alt="Old man and two blind sons visits the court">
+    <p>one day an old man with his two blind sons visits the court. With his folded hands, the man said, "Your Majesty, I've come here with a hope to be saved by you from my distress,".</p>
+    <audio id="narration-17a" src="Page17a.mp3"></audio>
+    <audio id="narration-17b" src="Page17b.mp3"></audio>
+    <button onclick="document.getElementById('narration-17a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-17b').play()">▶️ Play Narration-Oldman</button>
+  </div>
+
+  <div id="page-18" class="page active">
+    <div class="page-number"><b>Page 18</b></div>
+    <img src="images/Page18.png" alt="The king asked">
+    <p>"The King asked, "How can I be helpful to you?"</p>
+    <audio id="narration-18a" src="Page18a.mp3"></audio>
+    <audio id="narration-18b" src="Page18b.mp3"></audio>
+    <button onclick="document.getElementById('narration-18a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-18b').play()">▶️ Play Narration-King Vasanthdev</button>
+  </div>
+
+  <div id="page-19" class="page active">
+    <div class="page-number"><b>Page 19</b></div>
+    <img src="images/Page19.png" alt="The king asked">
+    <p>"The Oldman replied, "Your Majesty, I am a merchant and these are my sons. These two sons are blind. some years before my business were going successful and working well and we are happily enjoying spending for our life. But some years the business was ruined, we came here for the hope, and we need you help"</p>
+    <audio id="narration-19a" src="Page19a.mp3"></audio>
+    <audio id="narration-19b" src="Page19b.mp3"></audio>
+    <button onclick="document.getElementById('narration-19a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-19b').play()">▶️ Play Narration-Oldman</button>
+  </div>
+
+  <div id="page-20" class="page active">
+    <div class="page-number"><b>Page 20</b></div>
+    <img src="images/Page18.png" alt="The king asked">
+    <p>"The King asked, "Ok!,How can I be help you?"</p>
+    <audio id="narration-20a" src="Page20a.mp3"></audio>
+    <audio id="narration-20b" src="Page20b.mp3"></audio>
+    <button onclick="document.getElementById('narration-20a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-20b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-21" class="page active">
+    <div class="page-number"><b>Page 21</b></div>
+    <img src="images/Page19.png" alt="The Oldman replied">
+    <p>"The Oldman replied, "Your Majesty, I want a loan of 500 gold coins, I am requesting for a loan. After 6 months I will return back soon."</p>
+    <audio id="narration-21a" src="Page21a.mp3"></audio>
+    <audio id="narration-21b" src="Page21b.mp3"></audio>
+    <button onclick="document.getElementById('narration-21a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-21b').play()">▶️ Play Narration-Oldman</button>
+  </div>
+
+  <div id="page-22" class="page active">
+    <div class="page-number"><b>Page 22</b></div>
+    <img src="images/Page18.png" alt="The Oldman replied">
+    <p>"The King questioned "Or else, if you do not return to my loan what will happen?"."</p>
+    <audio id="narration-22a" src="Page22a.mp3"></audio>
+    <audio id="narration-22b" src="Page22b.mp3"></audio>
+    <button onclick="document.getElementById('narration-22a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-22b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-23" class="page active">
+    <div class="page-number"><b>Page 23</b></div>
+    <img src="images/Page20.png" alt="The Oldman replied">
+    <p>" Your Majesty, I am leaving two sons on your serive as gurantee to my words. 
+      My sons are blessed with a rare talent and special power My elder son can speak abouyt the properties of the horse and other son can speak about the properties of the gem.
+      It will be pretty much sure it will be quite helpful to you.
+      If I will try return to my loan when my sons will perform any work and if I am not return to my loan then, you will be beheaded me and my two sons."</p>
+    <audio id="narration-23a" src="Page23a.mp3"></audio>
+    <audio id="narration-23b" src="Page23b.mp3"></audio>
+    <button onclick="document.getElementById('narration-23a').play()">▶️ Play Narration-Oldman</button>
+    <button onclick="document.getElementById('narration-23b').play()">▶️ Play Narration-Oldman</button>
+  </div>
+
+  <div id="page-24" class="page active">
+    <div class="page-number"><b>Page 24</b></div>
+    <img src="images/Page20.png" alt="The Oldman replied">
+    <p>"The King accepts the oldman's conditions and said, Ok I will accept you condition in a 6 months your sons will stay here and I will see your sons talent. I will return to your loan to you, then after 6 months you shall return the loan to me"</p>
+    <audio id="narration-24a" src="Page24a.mp3"></audio>
+    <audio id="narration-24b" src="Page24b.mp3"></audio>
+    <button onclick="document.getElementById('narration-24a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-24b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-25" class="page active">
+    <div class="page-number"><b>Page 25</b></div>
+    <img src="images/Page21.png" alt="The Oldman replied">
+    <p>"The King asked his treasurer to give 500 gold coins to the oldman. The oldman thanked the king. He promised the king to the court. The two blind sons were appointed in the service of the court."</p>
+    <audio id="narration-25" src="Page25.mp3"></audio>
+    <button onclick="document.getElementById('narration-25').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-26" class="page active">
+    <div class="page-number"><b>Page 26</b></div>
+    <img src="images/Page22.png" alt="The Oldman replied">
+    <p>"One day it so happened that a horse trader visited the court with a tall handsome fine breed horse. "Your Majesty, I am a horse trader. I will sell horses. I brought you an excellent horse that will suit's you."</p>
+    <audio id="narration-26a" src="Page26a.mp3"></audio>
+    <audio id="narration-26b" src="Page26b.mp3"></audio>
+    <button onclick="document.getElementById('narration-26a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-26b').play()">▶️ Play Narration-Horseman</button>
+  </div>
+
+  <div id="page-27" class="page active">
+    <div class="page-number"><b>Page 27</b></div>
+    <img src="images/Page23.png" alt="The Oldman replied">
+    <p>"The King Question, What's the speciality that horse will do?."</p>
+    <audio id="narration-27a" src="Page27a.mp3"></audio>
+    <audio id="narration-27b" src="Page27b.mp3"></audio>
+    <button onclick="document.getElementById('narration-27a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-27b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-28" class="page active">
+    <div class="page-number"><b>Page 28</b></div>
+    <img src="images/Page23.png" alt="The Oldman replied">
+    <p>"The Horseman answered that ""That horse will do anything". Your Majesty, that horse will run faster and no other horse will be found in any city. Just try yourself. Majesty."</p>
+    <audio id="narration-28a" src="Page28a.mp3"></audio>
+    <audio id="narration-28b" src="Page28b.mp3"></audio>
+    <button onclick="document.getElementById('narration-28a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-28b').play()">▶️ Play Narration-Horseman</button>
+  </div>
+
+  <div id="page-29" class="page active">
+    <div class="page-number"><b>Page 29</b></div>
+    <img src="images/Page23.png" alt="The Oldman replied">
+    <p>"The King said: "Ok! I will test your horse, and I will reveal the truth that you brought that horse is completely real or fake."</p>
+    <audio id="narration-29a" src="Page29a.mp3"></audio>
+    <audio id="narration-29b" src="Page29b.mp3"></audio>
+    <button onclick="document.getElementById('narration-29a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-29b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-30" class="page active">
+    <div class="page-number"><b>Page 30</b></div>
+    <img src="images/Page24.png" alt="The King calls two blind sons">
+    <p>"Suddenly the king called two blind sons of the old man and king select the elder son of the Oldman and king said."</p>
+    <audio id="narration-30" src="Page30.mp3"></audio>
+    <button onclick="document.getElementById('narration-30').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-31" class="page active">
+    <div class="page-number"><b>Page 31</b></div>
+    <img src="images/Page24.png" alt="The King calls two blind sons">
+    <p>"The King said."Your father said that you will speak about the properties and beed of any horse, Can you test that horse for me ?""</p>
+    <audio id="narration-31a" src="Page31a.mp3"></audio>
+    <audio id="narration-31b" src="Page31b.mp3"></audio>
+    <button onclick="document.getElementById('narration-31a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-31b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-32" class="page active">
+    <div class="page-number"><b>Page 32</b></div>
+    <img src="images/Page25.png" alt="The King calls two blind sons">
+    <p>"The elder blind son of the oldman was testing the horse with his touch of sense that this horse was real or fake."</p>
+    <audio id="narration-32" src="Page32.mp3"></audio>
+    <button onclick="document.getElementById('narration-32').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-33" class="page active">
+    <div class="page-number"><b>Page 33</b></div>
+    <img src="images/Page26.png" alt="The King calls two blind sons">
+    <p>"The elder blind son said that ""I test that horse, Your Majesty, the horse is absolutely real, but I won't recommend you buy and ride the horse because it may cause accident to the person who takes the ride."."</p>
+    <audio id="narration-33a" src="Page33a.mp3"></audio>
+    <audio id="narration-33b" src="Page33b.mp3"></audio>
+    <button onclick="document.getElementById('narration-33a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-33b').play()">▶️ Play Narration-Elder Blind son</button>
+  </div>
+
+  <div id="page-34" class="page active">
+    <div class="page-number"><b>Page 34</b></div>
+    <img src="images/Page27.png" alt="The King calls two blind sons">
+    <p>"The Horseman insisted angrily. It's ridiculous to believe you, how can you said like that?"</p>
+    <audio id="narration-34a" src="Page34a.mp3"></audio>
+    <audio id="narration-34b" src="Page34b.mp3"></audio>
+    <button onclick="document.getElementById('narration-34a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-34b').play()">▶️ Play Narration-Horseman</button>
+  </div>
+
+  <div id="page-35" class="page active">
+    <div class="page-number"><b>Page 35</b></div>
+    <img src="images/Page29.png" alt="The King calls two blind sons">
+    <p>"Stop, I will send the best rider that can test ride to your horse, said the king the king calls the raider and said to ride the horse, he mounted the horse , it angrily threw the raider down, the king and the Horseman shocked too see this scene."</p>
+    <audio id="narration-35a" src="Page35a.mp3"></audio>
+    <audio id="narration-35b" src="Page35b.mp3"></audio>
+    <button onclick="document.getElementById('narration-35a').play()">▶️ Play Narration-King Vasantdev</button>
+    <button onclick="document.getElementById('narration-35b').play()">▶️ Play Narration-Betaal</button>
+  </div>
+  <div id="page-36" class="page active">
+    <div class="page-number"><b>Page 36</b></div>
+    <img src="images/Page30.png" alt="The King calls two blind sons">
+    <p><strong>between horseman and the elder blind son</strong>
+      Elder blind son: "In fact this horse is quite comfortable with any milkman. Are you a milkman by profession?",
+      
+      Horseman: ""Yes I was a milkman, "But how did you know that?"</p>
+    <audio id="narration-36a" src="Page36a.mp3"></audio>
+    <audio id="narration-36b" src="Page36b.mp3"></audio>
+    <button onclick="document.getElementById('narration-36a').play()">▶️ Play Narration-Elder Blind son</button>
+    <button onclick="document.getElementById('narration-36b').play()">▶️ Play Narration-Horseman/button>
+  </div>
+
+  <div id="page-37" class="page active">
+    <div class="page-number"><b>Page 37</b></div>
+    <img src="images/Page30.png" alt="The King calls two blind sons">
+    <p><strong>Conversation between horseman and the elder blind son</strong>
+      Elder blind son: "By its smell answered that this hose was was born and brought up in the milkman;'s house and so quite at ease with any one who deals with milk for his feels familiar with him, Am i right horseman"?",
+      
+      Horseman: "Yes first I was working as a milkman, One blind son knew all of it, "Fantastic"."</p>
+    <audio id="narration-37a" src="Page37a.mp3"></audio>
+    <audio id="narration-37b" src="Page37b.mp3"></audio>
+    <audio id="narration-37c" src="Page37c.mp3"></audio>
+    <button onclick="document.getElementById('narration-37a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-37b').play()">▶️ Play Narration-Elder Blind son</button>
+    <button onclick="document.getElementById('narration-37c').play()">▶️ Play Narration-Horseman</button>
+  </div>
+
+  
+  <div id="page-38" class="page active">
+    <div class="page-number"><b>Page 38</b></div>
+    <img src="images/Page31.png" alt="The King calls two blind sons">
+    <p>"The king pleased and said,"excellent, your father is right, really you have an amazing talent""</p>
+    <audio id="narration-38a" src="Page38a.mp3"></audio>
+    <audio id="narration-38b" src="Page38b.mp3"></audio>
+    <button onclick="document.getElementById('narration-38a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-38b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-39" class="page active">
+    <div class="page-number"><b>Page 39</b></div>
+    <img src="images/Page32.png" alt="The King calls two blind sons">
+    <p>"The elder son was proved that he was blind talent, just when suddenly a jeweler man visited the court with the box and said, Your Majesty I brought a precious and costly gem that no other gem that can be compared"</p>
+    <audio id="narration-39a" src="Page39a.mp3"></audio>
+    <audio id="narration-39b" src="Page39b.mp3"></audio>
+    <button onclick="document.getElementById('narration-39a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-39b').play()">▶️ Play Narration-Jewellery man</button>
+  </div>
+
+  <div id="page-40" class="page active">
+    <div class="page-number"><b>Page 40</b></div>
+    <img src="images/Page33.png" alt="The King calls two blind sons">
+    <p>"The King said,""Ok, I will test the gem that this gem is precious or fake."</p>
+    <audio id="narration-40a" src="Page40a.mp3"></audio>
+    <audio id="narration-40b" src="Page40b.mp3"></audio>
+    <button onclick="document.getElementById('narration-40a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-40b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-41" class="page active">
+    <div class="page-number"><b>Page 41</b></div>
+    <img src="images/Page34.png" alt="The King calls two blind sons">
+    <p>"The King saw the gem by taking out of the box and give the gem to the younger bind son for testing."</p>
+    <audio id="narration-41" src="Page41.mp3"></audio>
+    <button onclick="document.getElementById('narration-41').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-42" class="page active">
+    <div class="page-number"><b>Page 42</b></div>
+    <img src="images/Page35.png" alt="The King calls two blind sons">
+    <p>"The Younger blind son test the gem by taking the one hand and rubbing the gem with the other hand. The younger blind on said,"I test the gem, Your Majesty, it's real but you cannot wear this, it will bring death with bearer.""</p>
+    <audio id="narration-42a" src="Page42a.mp3"></audio>
+    <audio id="narration-42b" src="Page42b.mp3"></audio>
+    <button onclick="document.getElementById('narration-42a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-42b').play()">▶️ Play Narration-Younger Blind son</button>
+  </div>
+
+  <div id="page-43" class="page active">
+    <div class="page-number"><b>Page 43</b></div>
+    <img src="images/Page35.png" alt="The King calls two blind sons">
+    <p><strong>Conversation between the king and younger bling son</strong>
+    King : How can you justify your clam?
+  
+    Younger blind son: "Your Majesty, you may cross check with the gem itself. The gem nodded his head in affirmation. He accepts that three of the family members who had been its previous owners died of sudden death because of this gem.
+  </p>
+    <audio id="narration-43a" src="Page43a.mp3"></audio>
+    <audio id="narration-43b" src="Page43b.mp3"></audio>
+    <button onclick="document.getElementById('narration-43a').play()">▶️ Play Narration-King Vasantdev</button>
+    <button onclick="document.getElementById('narration-43b').play()">▶️ Play Narration-Younger Blind son</button>
+  </div>
+
+  <div id="page-44" class="page active">
+    <div class="page-number"><b>Page 44</b></div>
+    <img src="images/Page36.png" alt="The King calls two blind sons">
+    <p><strong>Conversation between the jweller man and </strong>
+    Jweller man: He is right, I am sorry for that, Please excuse me.
+  
+    King:"Take your gem box and "Get out!".
+  </p>
+    <audio id="narration-44a" src="Page44a.mp3"></audio>
+    <audio id="narration-44b" src="Page44b.mp3"></audio>
+    <button onclick="document.getElementById('narration-44a').play()">▶️ Play Narration-Jewellery man</button>
+    <button onclick="document.getElementById('narration-44b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-45" class="page active">
+    <div class="page-number"><b>Page 45</b></div>
+    <img src="images/Page37.png" alt="The King calls two blind sons">
+    <p>A few months passed, an Oldman returned to the court with returning 500 gold coins to the treasurer.</p>
+    <audio id="narration-45" src="Page45.mp3"></audio>
+    <button onclick="document.getElementById('narration-45').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-46" class="page active">
+    <div class="page-number"><b>Page 46</b></div>
+    <img src="images/Page38.png" alt="The King calls two blind sons">
+    <p><strong>Conversation between Oldman and the King</strong>
+    Oldman: "Your Majesty, I have returned to the loan that you offered 500 gold coins. Can I take my sons back.
+  
+    King: Sure you can take sons back. But your sons are having an excellent talent. But one question that i can ask for you 
+    that if you are a talented son's father, then you also having any special. If it is yes then what's the special that you
+    know about? </p>
+    <audio id="narration-46a" src="Page46a.mp3"></audio>
+    <audio id="narration-46b" src="Page46b.mp3"></audio>
+    <button onclick="document.getElementById('narration-46a').play()">▶️ Play Narration-Oldmam</button>
+    <button onclick="document.getElementById('narration-46b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-47" class="page active">
+    <div class="page-number"><b>Page 47</b></div>
+    <img src="images/Page38.png" alt="The King calls two blind sons">
+    <p><strong>Conversation between Oldman and the King</strong>
+    Oldman: "Your Majesty, Trust me I can speak the virtue of any person.
+  
+    King: "Wow!", is it then speak something about me?</p>
+    <audio id="narration-47a" src="Page47a.mp3"></audio>
+    <audio id="narration-47b" src="Page47b.mp3"></audio>
+    <button onclick="document.getElementById('narration-47a').play()">▶️ Play Narration-Oldman</button>
+    <button onclick="document.getElementById('narration-47b').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-48" class="page active">
+    <div class="page-number"><b>Page 48</b></div>
+    <img src="images/Page39.png" alt="The King calls two blind sons">
+    <p>The Oldman thought for a while and said,"Your majesty, your father is a thief, he is always steal something person's wealth So, you are a thief's son?"</p>
+    <audio id="narration-48a" src="Page48a.mp3"></audio>
+    <audio id="narration-48b" src="Page48b.mp3"></audio>
+    <button onclick="document.getElementById('narration-48a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-48b').play()">▶️ Play Narration-Oldman</button>
+  </div>
+
+  
+  <div id="page-49" class="page active">
+    <div class="page-number"><b>Page 49</b></div>
+    <img src="images/Page40.png" alt="The King calls two blind sons">
+    <p>"King: How dare you to said like that, Guards, arrest that oldman and two blind sons and beheaded it right now"</p>
+    <audio id="narration-49" src="Page49.mp3"></audio>
+    <button onclick="document.getElementById('narration-49').play()">▶️ Play Narration-King Vasantdev</button>
+  </div>
+
+  <div id="page-50" class="page active">
+    <div class="page-number"><b>Page 50</b></div>
+    <img src="images/Page41.png" alt="The King calls two blind sons">
+    <p>"Now tell me Vikram was the king justifiable in his act?", Answer to my question orelse your head will be split into pieces.</p>
+    <audio id="narration-50" src="Page50.mp3"></audio>
+    <button onclick="document.getElementById('narration-50').play()">▶️ Play Narration-Betaal</button>
+  </div>
+
+  <div id="page-51" class="page active">
+    <div class="page-number"><b>Page 51</b></div>
+    <img src="images/Page42.png" alt="The King calls two blind sons">
+    <p>"King Vasanthdev was not justifiable in his act. He was actually the son of a thief. But the relevation of the ugly truth, 
+      so far the responsibility of death concered, the old man himself was responsible for the three deaths, one should be careful while speaking 
+      the bitter truth one must access the place and the person where and in front of whom he is speaking it. But unfrortunatly the oldman was not 
+      proved wise enough and fated to death.</p>
+    <audio id="narration-51" src="Page51.mp3"></audio>
+    <button onclick="document.getElementById('narration-51').play()">▶️ Play Narration-King Vikramaditya</button>
+  </div>
+
+  <div id="page-52" class="page active">
+    <div class="page-number"><b>Page 52</b></div>
+    <img src="images/Page43.png" alt="The King calls two blind sons">
+    <p>"Your judgement is indeed laudable!" remarked betaal. "However since you could not remain silent I am leaving you".
+     Saying So Betaal flew back towards the old peepal tree while Vikramaditya holding his sword rushed to catch him.</p>
+    <audio id="narration-52a" src="Page52a.mp3"></audio>
+    <audio id="narration-52b" src="Page52b.mp3"></audio>
+    <button onclick="document.getElementById('narration-52a').play()">▶️ Play Narration-Betaal</button>
+    <button onclick="document.getElementById('narration-52b').play()">▶️ Play Narration-storyteller</button>
+  </div>
+
+</section>
+
+</body>
+</html>
