@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Virtual Art Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Virtual Art Gallery</h1>
+  </header>
+
+  <main class="gallery">
+    <!-- Art items -->
+    <div class="art" onclick="openModal('art1')">
+      <img src="images\Sunrise Overdrive.png" alt="Art 1" />
+      <p>Sunset Overdrive</p>
+    </div>
+    <div class="art" onclick="openModal('art2')">
+      <img src="images\Dreamscape.png" alt="Art 2" />
+      <p>Dreamscape</p>
+    </div>
+    <div class="art" onclick="openModal('art3')">
+        <img src="images\gold-la-pastiche-art-paintings-ldv1497-fr-7444620x24-64_1000.avif" alt="Art 3" />
+        <p>Monalisa Painting</p>
+      </div>
+      <div class="art" onclick="openModal('art4')">
+        <img src="images\R.jpeg" alt="Art 4" />
+        <p>Landscape</p>
+      </div>
+       <div class="art" onclick="openModal('art5')">
+        <img src="images\Wallpaper.jpg" alt="Art 5" />
+        <p>Wallpaper</p>
+      </div>
+       <div class="art" onclick="openModal('art6')">
+        <img src="images\bbf9027261ad5637bcfbff66a0fb3bbc.jpg" alt="Art 6" />
+        <p>Tamil Nadu Painting</p>
+      </div>
+       <div class="art" onclick="openModal('art7')">
+        <img src="images\Madhubani.jpg" alt="Art 7" />
+        <p>Madhubani Painting</p>
+      </div>
+       <div class="art" onclick="openModal('art8')">
+        <img src="images\tanjore Paintingjpg.jpg" alt="Art 8" />
+        <p>Tanjore Painting</p>
+      </div>
+      <div class="art" onclick="openModal('art9')">
+        <img src="images\Waril art.png" alt="Art 9" />
+        <p>Waril Painting</p>
+      </div>
+      <div class="art" onclick="openModal('art10')">
+        <img src="images\nIRMAL.jpeg" alt="Art 10" />
+        <p>Nirmal Painting</p>
+      </div>
+      <div class="art" onclick="openModal('art11')">
+        <img src="images\Phad-painting.jpeg" alt="Art 11" />
+        <p>Phad-painting</p>
+      </div>
+      <div class="art" onclick="openModal('art11')">
+        <img src="images\OIP.jpeg" alt="Art 11" />
+        <p>Telangana painting</p>
+      </div>
+    <!-- Add more art pieces as needed -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" class="modal-content" />
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
