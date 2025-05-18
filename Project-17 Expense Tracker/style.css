@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e8caca;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+  }
+.container {
+  background: rgb(208, 208, 80);
+  padding: 30px;
+  border-radius: 10px;
+  border: 10px solid #ddd; /* light gray border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 600px;
+}
+
+  h2 {
+    text-align: center;
+    color: #333;
+  }
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black; /* Set input text color to black */
+}
+
+
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Creates vertical space between stacked buttons */
+  }
+
+  button:hover {
+    background: #0056b3;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    background: #f9f9f9;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+
+  .total {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .delete {
+    color: red;
+    cursor: pointer;
+  }
+
+.save-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .save-button:hover {
+    background-color: #22963d;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+

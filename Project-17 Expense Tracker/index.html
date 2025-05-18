@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Expense Tracker</h2>
+    
+    <div class="input-section">
+      <input type="text" id="expense-name" placeholder="Expense Name">
+      <input type="number" id="expense-amount" placeholder="Amount">
+      <li><input type="date" id="expense-date">
+      <select id="expense-category">
+      </li>
+        <option value="">Select Category</option>
+        <option value="Dining Out">Dining Out</option>
+        <option value="Transport">Transport</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Housing">Housing</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Education">Education</option>
+        <option value="Gifts/Charity">Gifts/Charity</option>
+        <option value="Personel Care">Personel Care</option>
+        <option value="Debt Payments">Debt Payments</option>
+        <option value="Travel">Travel</option>
+        <option value="Other">Other</option>
+      </select>
+      
+      
+        <!-- existing inputs -->
+  <button onclick="addExpense()">Add Expense</button><br>
+
+  <button 
+  onclick="saveExpenses()" 
+  style="background-color: #4CAF50; color: white; border: none; 
+  padding: 10px 20px; border-radius: 5px; cursor: pointer;"
+  onmouseover="this.style.backgroundColor='#45a050'"
+  onmouseout="this.style.backgroundColor='#4CAF50'">
+  💾 Save Expenses
+</button>
+
+
+</div>
+
+    <div class="filter-section">
+      <label for="filter-category">Filter by Category:</label>
+      <select id="filter-category" onchange="filterExpenses()">
+        <option value="All">All</option>
+        <option value="Dining Out">Dining Out</option>
+        <option value="Transport">Transport</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Housing">Housing</option>
+        <option value="Groceries">Groceries</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Education">Education</option>
+        <option value="Personel Care">Personel Care</option>
+        <option value="Debt Payments">Debt Payments</option>
+        <option value="Travel">Travel</option>
+        <option value="Other">Other</option>
+      </select>
+      
+    </div>
+
+    <ul id="expense-list"></ul>
+
+    <div class="total" id="total">Total Amount: ₹0</div>
+  </div>
+
+  
+</select>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
+
