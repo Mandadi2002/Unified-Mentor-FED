@@ -1,4 +1,4 @@
-Student-Teacher Appointment System
+# Student-Teacher Appointment System
 Project Overview
 I'm excited to introduce the Student-Teacher Appointment System, a comprehensive platform developed to simplify the appointment process for students and teachers. This project was created using HTML, CSS, JavaScript, and Firebase during my internship at Unified Mentor.
 
