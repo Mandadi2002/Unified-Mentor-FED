@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firebase Auth</title>
+    <link rel="stylesheet" href="style.css">
+ <style>
+  body {
+    background-image: url('images/OIP.webp');
+    background-size: contain; /* Keeps original image size */
+    background-repeat: no-repeat;
+    background-position: top center; /* Adjust alignment if needed */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+</style>
+
+
+</head>
+<body>
+     
+ <nav class="nav bd-grid"> 
+  <nav class="navbar">
+  <div class="navbar-brand">📚 STUDENT-TEACHER BOOKING APPOINTMENT</div>
+  <div class="nav__menu" id="nav-menu">
+    <ul class="nav-list">  
+         
+      
+      <li class="dropdown">
+        <a href="#">Admin ▾</a>
+               <ul class="dropdown-menu">
+            <li><a href="admin/admin.html">Admin Login</a></li>
+           <li><a href="admin/admin-add-teacher.html">Enter Teacher Details</a></li>
+          <li><a href="admin/view-teacher-list.html">View Teacher List</a></li>
+          <li><a href="#" onclick="logout()">Logout</a></li>
+          
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a href="#">Teacher ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="Teacher/teacher-index.html">Teacher Login</a></li>
+             <li><a href="Teacher/view-appointments.html">View Appointments</a></li>
+           
+          <li><a href="Home.html" onclick="logout()">Logout</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Student ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="student/student-index.html">Student Login</a></li>
+            <li><a href="student/book-appointment.html">Book Appointments</a></li>
+                      
+          <li><a href="student/view-teacher-status.html">View Teacher List</a></li>
+          <li><a href="Home.html" onclick="logout()">Logout</a></li>
+        </ul>
+      </li>
+           
+     
+    </ul>
+  </div>
+</nav>
+
+
+
+    <!-- Import Firebase as modules -->
+    <script type="module">
+        // Import the Firebase SDK
+    // Import Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+// Firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyDMP66tvLO5mWbNUjpEzCtyLFTaNwALskU",
+  authDomain: "stu-tea-appt.firebaseapp.com",
+  projectId: "stu-tea-appt",
+  storageBucket: "stu-tea-appt.firebasestorage.app",
+  messagingSenderId: "591757803925",
+  appId: "1:591757803925:web:42d5f6695e1c08a916369c",
+  measurementId: "G-7FL3HDW1M4"
+};
+
+ // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+  const auth = getAuth(app);
+
+       
+
+    </script>
+</body>
+</html>
