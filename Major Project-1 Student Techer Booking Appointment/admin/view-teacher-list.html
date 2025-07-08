@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>View & Manage Teachers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="nav bd-grid"> 
+  <nav class="navbar">
+  <div class="navbar-brand">📚 STUDENT-TEACHER BOOKING APPOINTMENT</div>
+  <div class="nav__menu" id="nav-menu">
+    <ul class="nav-list">  
+        <li><a href="D:\MJR-3 projects\New folder\student-teacher-booking-appointement-main\home.html">Home</a></li>      
+      <li class="dropdown">
+        <a href="#">Admin ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="admin.html">Admin Login</a></li>
+           <li><a href="admin-add-teacher.html">Enter Teacher Details</a></li>
+          <li><a href="view-teacher-list.html">View Teacher List</a></li>
+          <li><a href="admin.html" onclick="logout()">Logout</a></li>
+        </ul>
+              
+     
+    </ul>
+  </div>
+</nav>
+
+  <h2>Teacher List</h2>
+  <li><a href="admin.html" onclick="logout()">Logout</a></li>
+  <table border ="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Subject</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="teacher-table-body"></tbody>
+  </table>
+
+  <!-- Edit Modal -->
+  <div id="edit-modal" style="display:none; background:#ccc; padding:20px;">
+    <h3>Edit Teacher</h3>
+    <input type="text" id="edit-name" placeholder="Name"><br>
+    <input type="text" id="edit-department" placeholder="Department"><br>
+    <input type="text" id="edit-subject" placeholder="Subject"><br>
+    <select id="edit-status">
+      <option value="Available">Available</option>
+      <option value="Busy">Busy</option>
+    </select><br>
+    <button id="save-button">Save</button>
+    <button onclick="closeModal()">Cancel</button>
+  </div>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getFirestore, collection, getDocs, doc, updateDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMP66tvLO5mWbNUjpEzCtyLFTaNwALskU",
+      authDomain: "stu-tea-appt.firebaseapp.com",
+      projectId: "stu-tea-appt",
+      storageBucket: "stu-tea-appt.firebasestorage.app",
+      messagingSenderId: "591757803925",
+      appId: "1:591757803925:web:42d5f6695e1c08a916369c"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const tableBody = document.getElementById("teacher-table-body");
+    const editModal = document.getElementById("edit-modal");
+
+    let currentEditId = null;
+
+    async function fetchTeachers() {
+      tableBody.innerHTML = "";
+      const querySnapshot = await getDocs(collection(db, "teachers"));
+      querySnapshot.forEach((docSnap) => {
+        const data = docSnap.data();
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${data.name}</td>
+          <td>${data.department}</td>
+          <td>${data.subject}</td>
+          <td>${data.status}</td>
+          <td>
+            <button onclick="editTeacher('${docSnap.id}', '${data.name}', '${data.department}', '${data.subject}', '${data.status}')">Edit</button>
+            <button onclick="deleteTeacher('${docSnap.id}')">Delete</button>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    window.editTeacher = function(id, name, department, subject, status) {
+      currentEditId = id;
+      document.getElementById("edit-name").value = name;
+      document.getElementById("edit-department").value = department;
+      document.getElementById("edit-subject").value = subject;
+      document.getElementById("edit-status").value = status;
+      editModal.style.display = "block";
+    }
+
+    window.closeModal = function() {
+      editModal.style.display = "none";
+      currentEditId = null;
+    }
+
+    document.getElementById("save-button").addEventListener("click", async () => {
+      const name = document.getElementById("edit-name").value;
+      const department = document.getElementById("edit-department").value;
+      const subject = document.getElementById("edit-subject").value;
+      const status = document.getElementById("edit-status").value;
+
+      if (!currentEditId) return;
+
+      const docRef = doc(db, "teachers", currentEditId);
+      await updateDoc(docRef, { name, department, subject, status });
+
+      closeModal();
+      fetchTeachers();
+    });
+
+    window.deleteTeacher = async function(id) {
+      if (confirm("Are you sure you want to delete this teacher?")) {
+        await deleteDoc(doc(db, "teachers", id));
+        fetchTeachers();
+      }
+    }
+
+    fetchTeachers();
+  </script>
+</body>
+</html>
+

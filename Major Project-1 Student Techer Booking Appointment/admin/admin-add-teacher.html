@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Teacher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="nav bd-grid"> 
+  <nav class="navbar">
+  <div class="navbar-brand">📚 STUDENT-TEACHER BOOKING APPOINTMENT</div>
+  <div class="nav__menu" id="nav-menu">
+    <ul class="nav-list">  
+        <li><a href="D:\MJR-3 projects\New folder\student-teacher-booking-appointement-main\home.html">Home</a></li>      
+      <li class="dropdown">
+        <a href="#">Admin ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="admin.html">Admin Login</a></li>
+           <li><a href="admin-add-teacher.html">Enter Teacher Details</a></li>
+          <li><a href="view-teacher-list.html">View Teacher List</a></li>
+          <li><a href="admin.html" onclick="logout()">Logout</a></li>
+        </ul>
+              
+     
+    </ul>
+  </div>
+</nav>
+
+  <h2>Add Teacher Details</h2>
+  <form id="add-teacher-form">
+    <input type="text" id="teacher-name" placeholder="Teacher Name" required /><br />
+    <input type="text" id="department-name" placeholder="Department" required /><br />
+    <input type="text" id="subject-name" placeholder="Subject" required /><br />
+    <select id="status">
+      <option value="Available">Available</option>
+      <option value="Busy">Busy</option>
+    </select><br />
+    <button type="submit">Add Teacher</button>
+    <p id="message"></p>
+  </form>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDMP66tvLO5mWbNUjpEzCtyLFTaNwALskU",
+      authDomain: "stu-tea-appt.firebaseapp.com",
+      projectId: "stu-tea-appt",
+      storageBucket: "stu-tea-appt.firebasestorage.app",
+      messagingSenderId: "591757803925",
+      appId: "1:591757803925:web:42d5f6695e1c08a916369c"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const form = document.getElementById("add-teacher-form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("teacher-name").value;
+      const department = document.getElementById("department-name").value;
+      const subject = document.getElementById("subject-name").value;
+      const status = document.getElementById("status").value;
+
+      try {
+        await addDoc(collection(db, "teachers"), {
+          name,
+          department,
+          subject,
+          status
+        });
+
+        document.getElementById("message").innerText = "Teacher added successfully!";
+        form.reset();
+      } catch (error) {
+        console.error("Error adding teacher:", error);
+        document.getElementById("message").innerText = "Failed to add teacher.";
+      }
+    });
+  </script>
+  <p><a href="view-teacher-list.html">View Teacher List</a></p>
+</body>
+</html>
+
+
