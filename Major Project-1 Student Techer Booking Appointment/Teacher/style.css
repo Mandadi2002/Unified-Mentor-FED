@@ -1,0 +1,284 @@
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  .content {
+    flex: 1; /* pushes the table to the bottom */
+  }
+
+  .table-container {
+    margin-top: auto;
+    padding: 20px;
+    background-color: #da4b4b;
+  }
+
+
+/* ========== HEADER & NAVIGATION ========== */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #273ef2;
+    z-index: 1000;
+    width: 100%;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(237, 62, 32, 0.2);
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #003366; /* Dark blue */
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Brand/title */
+.navbar-brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation links */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-left: 0;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #004080;
+  padding: 10px 0;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.dropdown-menu li {
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a {
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* ========== BODY ========== */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #a29ba0;
+    margin: 0;
+    color: #fff;
+}
+
+/* ========== CONTAINER FOR FORMS ========== */
+#container,
+#teacher-form-container {
+    width: 400px;
+    margin-top: 100px;
+    padding: 20px;
+    background: #282a2b;
+    box-shadow: 0 0 10px rgba(26, 43, 225, 0.5);
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#teacher-form-container {
+    margin: 30px auto;
+    max-width: 500px;
+    background-color: #444;
+    box-shadow: 0 0 10px rgba(14, 10, 235, 0.4);
+}
+
+#teacher-form input,
+#teacher-form button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+#add-teacher-form input,
+  #add-teacher-form select {
+    color: black;
+  }
+
+/* ========== TEXT STYLES ========== */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0dec57;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+/* ========== FORM INPUTS ========== */
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #070606;
+}
+
+input {
+    background-color: #e8452c;
+}
+
+button {
+    background-color: #007BFF;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ========== TEACHER LIST TABLE ========== */
+#teachers-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(80, 255, 50, 0.3);
+}
+
+#teachers-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0dec57;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #692323;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background-color: #555;
+}
+
+/* ========== LOGIN/REGISTER ========== */
+#register-studentName, #register-RollNumber, #register-email, #register-password, #login-email, #login-password {
+    padding-right: 0px;
+}
+
+#register, #login {
+    display: none;
+}
+
+#register.active, #login.active {
+    display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    #container, #teacher-form-container {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
+/* ========== VIEW TEACHER LIST TABLE ========== */
+#teacherslist-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(80, 255, 50, 0.3);
+}
+
+#teacherslist-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0dec57;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #692323;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background-color: #555;
+}
+

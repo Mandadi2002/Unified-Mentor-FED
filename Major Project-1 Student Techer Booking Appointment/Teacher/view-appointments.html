@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Appointments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav bd-grid"> 
+  <nav class="navbar">
+  <div class="navbar-brand">📚 STUDENT-TEACHER BOOKING APPOINTMENT</div>
+  <div class="nav__menu" id="nav-menu">
+    <ul class="nav-list">
+
+     
+        
+        <li class="dropdown">
+        <a href="#">Teacher ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="teacher-index.html">Teacher Login</a></li>
+             <li><a href="view-appointments.html">View Appointments</a></li>
+           
+          <li><a href="teacher-index.html" onclick="logout()">Logout</a></li>
+        </ul>
+      </li>
+
+  <!-- Appointment Table -->
+  <div id="view-appointments">
+    <h2>View Appointments</h2>
+    <table id="appointments-table">
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Teacher Name</th>
+          <th>Appointment Date</th>
+          <th>Appointment Time</th>
+          <th>Message</th>
+          <th>Status</th>
+          
+        </tr>
+      </thead>
+      <tbody id="appointments-list">
+        <!-- Appointments will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="view.js"></script>
+</body>
+</html>

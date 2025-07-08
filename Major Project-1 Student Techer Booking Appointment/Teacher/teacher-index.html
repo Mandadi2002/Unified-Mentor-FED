@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firebase Auth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <nav class="nav bd-grid"> 
+  <nav class="navbar">
+  <div class="navbar-brand">📚 STUDENT-TEACHER BOOKING APPOINTMENT</div>
+  <div class="nav__menu" id="nav-menu">
+    <ul class="nav-list">
+    <li><a href="D:\MJR-3 projects\New folder\student-teacher-booking-appointement-main\home.html">Home</a></li> 
+     
+        
+        <li class="dropdown">
+        <a href="#">Teacher ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="teacher-index.html">Teacher Login</a></li>
+             <li><a href="view-appointments.html">View Appointments</a></li>
+          
+          <li><a href="teacher-index.html" onclick="logout()">Logout</a></li>
+        </ul>
+      </li>
+      
+      
+
+
+ <!--=====REGISTER =====-->
+     <section class="home bd-grid" id="home"> 
+    <div id="container">
+        <div id="register">
+            <h2>Register</h2>
+            <input type="email" id="register-email" placeholder="Email" required>
+            <input type="password" id="register-password" placeholder="Password" required>
+            <button id="register-button">Register</button>
+            <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+            <p id="register-message"></p>
+        </div>
+       <!--=====LOGIN =====--> 
+        <div id="login">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button id="login-button">Login</button>
+            <p>Don't have an account? <a href="#" id="show-register">Register</a></p>
+            <p id="login-message"></p>
+        </div>
+    </div>
+     </section>
+    <!-- Import Firebase as modules -->
+    <script type="module">
+        // Import the Firebase SDK
+    // Import Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-auth.js";
+
+// Firebase config
+const firebaseConfig = {
+  apiKey: "AIzaSyDMP66tvLO5mWbNUjpEzCtyLFTaNwALskU",
+  authDomain: "stu-tea-appt.firebaseapp.com",
+  projectId: "stu-tea-appt",
+  storageBucket: "stu-tea-appt.firebasestorage.app",
+  messagingSenderId: "591757803925",
+  appId: "1:591757803925:web:42d5f6695e1c08a916369c",
+  measurementId: "G-7FL3HDW1M4"
+};
+
+ // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+  const auth = getAuth(app);
+
+       
+
+        // Toggle between Register and Login
+        document.getElementById('show-login').addEventListener('click', () => {
+            document.getElementById('register').style.display = 'none';
+            document.getElementById('login').style.display = 'block';
+        });
+
+        document.getElementById('show-register').addEventListener('click', () => {
+            document.getElementById('login').style.display = 'none';
+            document.getElementById('register').style.display = 'block';
+        });
+
+        // Register
+        document.getElementById('register-button').addEventListener('click', () => {
+            
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log('User registered:', user);
+                    document.getElementById('register-message').innerText = 'Registration successful!';
+                })
+                .catch((error) => {
+                    console.error('Error:', error.code, error.message);
+                    document.getElementById('register-message').innerText = `Error: ${error.message}`;
+                });
+        });
+
+        // Login
+        document.getElementById('login-button').addEventListener('click', () => {
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log('User logged in:', user);
+                    document.getElementById('login-message').innerText = 'Login successful!';
+                    
+                    // Redirect to book-appointment page
+                    window.location.href = 'view-appointments.html';
+                })
+                .catch((error) => {
+                    console.error('Error:', error.code, error.message);
+                    document.getElementById('login-message').innerText = `Error: ${error.message}`;
+                });
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const registerForm = document.getElementById("register");
+            const loginForm = document.getElementById("login");
+            const showLogin = document.getElementById("show-login");
+            const showRegister = document.getElementById("show-register");
+
+            // Show the register form initially
+            registerForm.classList.add("active");
+
+            showLogin.addEventListener("click", (e) => {
+                e.preventDefault();
+                registerForm.classList.remove("active");
+                loginForm.classList.add("active");
+            });
+
+            showRegister.addEventListener("click", (e) => {
+                e.preventDefault();
+                loginForm.classList.remove("active");
+                registerForm.classList.add("active");
+            });
+        });
+        
+    </script>
+</body>
+</html>
