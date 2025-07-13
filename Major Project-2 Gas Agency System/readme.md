@@ -2,8 +2,6 @@
 
 A comprehensive web-based application developed during my internship at **Unified Mentor** to simplify and streamline the process of booking appointments between students and teachers. Built using **HTML**, **CSS**, **JavaScript**, and **Firebase**.
 
-🎥 **Live Demo:** [Watch on YouTube](https://youtu.be/OJ7TavyOjrk)
-
 ---
 
 ## 🧩 Key Features
