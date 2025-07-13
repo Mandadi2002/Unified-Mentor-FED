@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://applylpgdealership.com/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<header class="header">
+
+    <a href="#" class="logo">
+        <img src="image/gas-cylinder.png">
+        <strong>Gas</strong> Seva 
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        <a href="admin_login.html">Admin</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <div class="panel">
+                    <h3>Admin Login Panel</h3>
+                        <form method="post" action="admin_dashboard.html" onsubmit="return foo()">
+                        <input type="hidden" name="_token" value="rHmef2V5LY5dJsfw46OW852FQ97d9QfbvOu4CCAY">							
+                        <div class="row">
+                            <div class="col-md-12">
+                                <input type="email" name="email" class="form-control" placeholder="Email ID" required>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="password" name="password" class="form-control " placeholder="Password" required>
+                            </div>
+                            <div class="col-6 col-sm-6">
+                                <button type="submit"  class="btn btn-primary mt-20" onclick=admin_login(this.form);>Login</button>
+                            </div>					
+                            <div class="col-6 col-sm-6 text-right">
+                                <a href="#" style="margin-top:10px;display:block;">Forgot Password</a>
+                            </div>					
+                        </div>
+                    </form>
+
+                </div>			
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- js file link  -->
+<script src="js/script.js"></script>
+
